@@ -1,2 +1,41 @@
 <div class="footerContainer">
+    {{ if .IsPage }}
+
+    {{ if .NextInSection }}
+    <a href="{{.NextInSection.Permalink}}" class="linkNoUnderline">
+        <div class="footerNavigationWrapper bp3-card">
+            <span class="bp3-icon-standard bp3-icon-arrow-left"></span>&nbsp;
+            {{.NextInSection.Name}}
+        </div>
+    </a>
+    {{ else }}
+    <a href="{{.Parent.URL}}" class="linkNoUnderline">
+        <div class="footerNavigationWrapper bp3-card">
+            <span class="bp3-icon-standard bp3-icon-arrow-left"></span>&nbsp;
+            {{.Parent.Name}}
+        </div>
+    </a>
+    {{ end }}
+    <div class="footerSpacer"></div>
+
+    {{ if .PrevInSection }}
+    <a href="{{.PrevInSection.Permalink}}" class="linkNoUnderline">
+        <div class="footerNavigationWrapper bp3-card">
+            {{.PrevInSection.Name}}
+            &nbsp;<span class="bp3-icon-standard bp3-icon-arrow-right"></span>
+        </div>
+    </a>
+    {{ end }}
+    {{ else }}
+    <div class="footerSpacer"></div>
+    {{$firstPage := index (.Pages) 0 }}
+    {{ if $firstPage }}
+    <a href="{{ $firstPage.URL }}" class="linkNoUnderline">
+        <div class="footerNavigationWrapper bp3-card">
+            {{$firstPage.Name}}
+            &nbsp;<span class="bp3-icon-standard bp3-icon-arrow-right"></span>
+        </div>
+    </a>
+    {{ end }}
+    {{ end }}
 </div>

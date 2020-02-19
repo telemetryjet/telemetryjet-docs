@@ -1,8 +1,26 @@
 {{ define "main" }}
 <main>
-	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-	{{ range $paginator.Pages }}
-	{{ .Render "summary" }}
-	{{ end }}
+	<article>
+		<h1>{{ .Title }}</h1>
+		<div>
+			<b>TelemetryJet</b> is a real-time data and control platform for makers.
+			<ul class="bp3-list">
+				<li>Stream live data sensor data from your project, with an easy-to-use set of libraries and
+					integrations.
+				</li>
+				<li>
+					View, record, and analyze live data from any internet-connected device.
+				</li>
+				<li>
+					Build beautiful, functional dashboards and share with teammates.
+				</li>
+				<li>
+					Trigger actions based on data, and feed control signals back to devices.
+				</li>
+			</ul>
+		</div>
+	</article>
 </main>
+
+
 {{ end }}

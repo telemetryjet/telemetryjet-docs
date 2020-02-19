@@ -35,6 +35,29 @@ body {
 
 .footerContainer {
     margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footerSpacer {
+    flex: 1;
+}
+
+.footerNavigationWrapper {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    align-items: center;
+    border-radius: 0px;
+    background-color: #F5F8FA;
+    min-width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #10161A;
+}
+
+.footerNavigationWrapper:hover {
+    background-color: #EBF1F5;
 }
 
 #root {
@@ -219,10 +242,18 @@ body {
 
 .buttonContainerSelected:hover {}
 
-.sidebarButtonLink {
+#sidebarContainer a {
     text-decoration: none;
 }
 
-.sidebarButtonLink:hover {
+#sidebarContainer a:hover {
+    text-decoration: none;
+}
+
+.linkNoUnderline {
+    text-decoration: none;
+}
+
+.linkNoUnderline:hover {
     text-decoration: none;
 }

@@ -1,10 +1,12 @@
 <div id="sidebarContainer">
-	<div id="sidebarTitleWrapper" class="titleContainer titleContainerSelected titleContainerExpanded">
-		<span id="sidebarTitleSpan">
-			TJET DOCS
-		</span>
-		<span class="bp3-icon-standard bp3-icon-airplane"></span>
-	</div>
+	<a href="{{.Site.Home.URL}}">
+		<div id="sidebarTitleWrapper" class="titleContainer titleContainerSelected titleContainerExpanded">
+			<span id="sidebarTitleSpan">
+				TJET DOCS
+			</span>
+			<span class="bp3-icon-standard bp3-icon-airplane"></span>
+		</div>
+	</a>
 	<!--
 	<div class="buttonContainer buttonContainerExpanded buttonContainerLarge buttonContainerLargeExpanded">
 		<div class="buttonText">Test</div>
@@ -14,7 +16,7 @@
 	</div>-->
 	{{ $currentPage := . }}
 	{{ range .Site.Menus.main }}
-	<a href="{{ .URL }}" class="sidebarButtonLink">
+	<a href="{{ .URL }}">
 		<div class="buttonContainer buttonContainerExpanded buttonContainerLarge buttonContainerLargeExpanded">
 			<div class="buttonText">{{ .Name }}</div>
 		</div>

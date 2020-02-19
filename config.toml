@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://docs.telemetryjet.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "TelemetryJet Documentation"
 theme = "tjet-docs-theme"
 sectionPagesMenu = "main"
 pluralizelisttitles = false
