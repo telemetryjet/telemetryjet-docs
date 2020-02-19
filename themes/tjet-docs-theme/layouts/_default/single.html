@@ -21,6 +21,8 @@
 		</div>
 		{{ end }}
 	</article>
+	Next Page: {{with .NextInSection}}{{.Permalink}}{{end}}
+	Prev Page: {{with .PrevInSection}}{{.Permalink}}{{end}}
 </main>
 
 {{ end }}
