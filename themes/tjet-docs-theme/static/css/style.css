@@ -1,0 +1,228 @@
+html {}
+
+body {
+    background-color: #D8E1E8;
+    font-family: "DIN", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    overscroll-behavior-y: none;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+* {
+    font-family: "DIN", serif
+}
+
+.sidebarContainer {
+    background-color: red;
+    flex: 0 0 auto;
+    width: 200px;
+}
+
+.mainContainer {
+    flex: 1;
+}
+
+.headerContainer {
+    background-color: blue;
+}
+
+.contentContainer {
+    background-color: yellow;
+}
+
+.footerContainer {
+    margin-top: 5px;
+}
+
+#root {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+}
+
+#rootFlexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 480px;
+    height: auto;
+    min-width: 640px;
+}
+
+#contentContainer {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 480px;
+    overflow: hidden;
+}
+
+#flexiblePageTextContent {
+    flex: 1 1 auto;
+    min-height: calc(480px - 51px);
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-y: auto;
+}
+
+.flexiblePageCard {
+    flex: 0 0 0;
+    padding: 0px;
+    align-items: stretch;
+    border-radius: 0px;
+    background-color: #F5F8FA;
+}
+
+.flexiblePagePadding {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-height: 479px) {
+    #flexiblePageTextContent {
+        overflow-y: auto;
+    }
+}
+
+#sidebarContainer {
+    background-color: #293742;
+    z-index: 11;
+    box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1),
+        0 0 0 rgba(16, 22, 26, 0),
+        0 1px 1px rgba(16, 22, 26, 0.2);
+
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    color: #738694;
+    flex: 0 0 auto;
+    min-height: calc(100vh - 15px);
+}
+
+.titleContainer {
+    width: 100%;
+    height: 50px;
+    flex: 0 0 auto;
+    border-bottom: 1px solid #182026;
+    border-top: 1px solid #394B59;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.titleContainerExpanded {
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+.titleContainerSelected {
+    color: #48AFF0;
+
+}
+
+#sidebarTitleSpan {
+    margin-right: 5px;
+}
+
+.buttonContainerDisabled {
+    color: #394B59;
+    background-color: #30404D;
+    cursor: default;
+}
+
+.buttonContainerDisabled:hover {
+    background-color: #30404D;
+}
+
+.buttonContainer {
+    width: 100%;
+    height: 50px;
+    flex: 0 0 auto;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid #182026;
+    border-top: 1px solid #394B59;
+    color: #8A9BA8;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.buttonContainerSmall {
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #10161A;
+    border-bottom: none;
+    border-top: none;
+}
+
+.buttonContainerSmall:hover {
+    background-color: #0c0e11 !important;
+}
+
+.buttonContainerSmallExpanded {
+    height: 30px;
+    padding-right: 13px;
+}
+
+.buttonContainerLarge {}
+
+.buttonContainerLargeExpanded {
+    height: 34px;
+    padding-right: 10px;
+}
+
+.buttonContainerExpanded {
+    width: 200px;
+    padding-left: 40px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buttonContainer:hover {
+    background-color: #202B33;
+}
+
+.buttonText {
+    margin-right: 8px;
+}
+
+.buttonContainerSmall .buttonText {
+    margin-right: 4px;
+}
+
+
+.buttonContainerSelected {
+    color: #48AFF0;
+    //text-shadow: 0px 0px 5px rgba(72, 175, 240, 0.51);
+}
+
+.buttonContainerSelected:hover {}
+
+.sidebarButtonLink {
+    text-decoration: none;
+}
+
+.sidebarButtonLink:hover {
+    text-decoration: none;
+}
