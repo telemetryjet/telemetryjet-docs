@@ -89,7 +89,6 @@ body {
 
 #flexiblePageTextContent {
     flex: 1 1 auto;
-    min-height: calc(480px - 51px);
     width: 100%;
     padding: 5px;
     display: flex;
@@ -111,12 +110,6 @@ body {
     padding-left: 20px;
     padding-bottom: 10px;
     padding-right: 10px;
-}
-
-@media only screen and (max-height: 479px) {
-    #flexiblePageTextContent {
-        overflow-y: auto;
-    }
 }
 
 #sidebarContainer {
@@ -266,4 +259,21 @@ body {
 
 .linkNoUnderline:hover {
     text-decoration: none;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+h2,
+h3,
+h4 {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.copyWrapper {
+    max-width: 1000px;
+    margin: 0 auto;
 }

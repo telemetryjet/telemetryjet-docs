@@ -37,7 +37,9 @@
 				{{ partial "header" . }}
 				<div id="flexiblePageTextContent" className="dark-scrollbar">
 					<div class="bp3-card bp3-elevation-two flexiblePageCard flexiblePagePadding dark-scrollbar">
-						{{ block "main" . }}{{ end }}
+						<div class="copyWrapper">
+							{{ block "main" . }}{{ end }}
+						</div>
 					</div>
 					{{ partial "footer" . }}
 				</div>
