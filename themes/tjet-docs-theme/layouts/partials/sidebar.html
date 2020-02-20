@@ -1,6 +1,7 @@
 <div id="sidebarContainer">
 	<a href="{{.Site.Home.URL}}">
-		<div id="sidebarTitleWrapper" class="titleContainer titleContainerSelected titleContainerExpanded">
+		<div id="sidebarTitleWrapper"
+			class="titleContainer titleContainerExpanded {{ if eq .Site.Home.URL .URL }}titleContainerSelected{{ end }}">
 			<span id="sidebarTitleSpan">
 				TJET DOCS
 			</span>
@@ -17,10 +18,21 @@
 	{{ $currentPage := . }}
 	{{ range .Site.Menus.main }}
 	<a href="{{ .URL }}">
-		<div class="buttonContainer buttonContainerExpanded buttonContainerLarge buttonContainerLargeExpanded">
-			<div class="buttonText">{{ .Name }}</div>
+		<div
+			class="buttonContainer buttonContainerExpanded buttonContainerLarge buttonContainerLargeExpanded {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}buttonContainerSelected{{end}}">
+			<div class="buttonText">{{ .Name }} </div>
 		</div>
 	</a>
+	{{ if .Page.IsNode }}
+	{{ range .Page.Pages }}
+	<a href="{{ .URL }}">
+		<div
+			class="buttonContainer buttonContainerExpanded buttonContainerSmall buttonContainerSmallExpanded {{ if eq $currentPage.URL .URL }}buttonContainerSmallSelected{{ end }}">
+			<div class="buttonText">{{ .Name }} </div>
+		</div>
+	</a>
+	{{ end }}
+	{{ end }}
 	{{ end }}
 
 </div>

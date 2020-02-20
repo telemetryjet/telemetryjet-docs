@@ -150,6 +150,10 @@ body {
     font-weight: 200;
 }
 
+.titleContainer {
+    color: #8A9BA8;
+}
+
 .titleContainerExpanded {
     justify-content: flex-end;
     padding-right: 15px;
@@ -237,7 +241,13 @@ body {
 
 .buttonContainerSelected {
     color: #48AFF0;
-    //text-shadow: 0px 0px 5px rgba(72, 175, 240, 0.51);
+    /*text-shadow: 0px 0px 5px rgba(72, 175, 240, 0.51);*/
+}
+
+.buttonContainerSmallSelected {
+    border-right: 4px solid #48AFF0;
+    padding-right: 9px;
+    color: #48AFF0;
 }
 
 .buttonContainerSelected:hover {}
