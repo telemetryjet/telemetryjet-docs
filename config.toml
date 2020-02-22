@@ -5,3 +5,5 @@ theme = "tjet-docs-theme"
 sectionPagesMenu = "main"
 pluralizelisttitles = false
 
+[params]
+    version = "v0.1.0"

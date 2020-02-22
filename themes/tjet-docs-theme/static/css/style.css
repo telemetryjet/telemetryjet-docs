@@ -6,31 +6,15 @@ body {
     line-height: 1.5;
     color: #333;
     overscroll-behavior-y: none;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
+    position: relative;
 }
 
 * {
     font-family: "DIN", serif
 }
 
-.sidebarContainer {
-    background-color: red;
-    flex: 0 0 auto;
-    width: 200px;
-}
-
 .mainContainer {
     flex: 1;
-}
-
-.headerContainer {
-    background-color: blue;
-}
-
-.contentContainer {
-    background-color: yellow;
 }
 
 .footerContainer {
@@ -60,15 +44,6 @@ body {
     background-color: #EBF1F5;
 }
 
-#root {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    overflow: auto;
-}
-
 #rootFlexContainer {
     display: flex;
     flex-direction: row;
@@ -82,21 +57,14 @@ body {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    min-height: 480px;
-    overflow: hidden;
-}
-
-#flexiblePageTextContent {
-    flex: 1 1 auto;
-    width: 100%;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    overflow-y: auto;
+
+    padding: 5px;
+    margin-left: 200px;
 }
+
+#flexiblePageTextContent {}
 
 .flexiblePageCard {
     flex: 0 0 0;
@@ -119,13 +87,116 @@ body {
         0 0 0 rgba(16, 22, 26, 0),
         0 1px 1px rgba(16, 22, 26, 0.2);
 
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
     width: 200px;
     display: flex;
     flex-direction: column;
     color: #738694;
     flex: 0 0 auto;
-    min-height: calc(100vh - 15px);
+    min-height: 100vh;
+}
+
+.mobileSidebarElement {
+    flex: 0 0 auto;
+}
+
+.mobileSidebarSpacer {
+    flex: 1;
+}
+
+#sidebarMobileHeader {
+    display: none;
+}
+
+.fullMenu {
+    display: block;
+}
+
+.mobileSidebarNavDropdown {
+    flex: 1 0 auto;
+    height: 30px;
+}
+
+.mobileSidebarNavDropdown:first-of-type {
+    margin-right: 10px;
+}
+
+.mobileSidebarNavDropdown:only-of-type {
+    margin-right: 0px;
+}
+
+#mobileSidebarTitle {
+    width: 100%;
+    flex: 0 0 auto;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #8A9BA8;
+}
+
+.mobileSidebarTitle:hover {
+    text-decoration: none;
+}
+
+.mobileHeaderFlexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+@media(max-width: 800px) {
+    #sidebarMobileHeader {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #293742;
+        border-bottom: 1px solid #182026;
+        border-top: 1px solid #394B59;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+    }
+
+    #sidebarContainer {
+        display: none;
+    }
+
+    .fullMenu {
+        display: none !important;
+    }
+
+    #contentContainer {
+        margin-top: 85px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-height: 500px) {
+    #sidebarContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
 }
 
 .titleContainer {
@@ -276,4 +347,19 @@ h4 {
 .copyWrapper {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.helpTextSpan {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: help;
+}
+
+.highlight span {
+    font-family: monospace;
+}
+
+.highlight pre {
+    padding: 5px;
+    border-radius: 3px;
 }

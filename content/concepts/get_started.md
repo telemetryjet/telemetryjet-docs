@@ -1,5 +1,6 @@
 ---
 title: "Get Started"
+weight: 2
 ---
 
 ## 1. Download the TelemetryJet Server

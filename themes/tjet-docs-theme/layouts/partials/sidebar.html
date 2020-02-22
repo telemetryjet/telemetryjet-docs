@@ -1,7 +1,55 @@
-<div id="sidebarContainer">
+<div id="sidebarMobileHeader" class="mobileMenu bp3-dark">
+	<div class="mobileHeaderFlexContainer">
+		<div class="mobileSidebarElement">
+			<a href="{{.Site.Home.URL}}" id="mobileSidebarTitle">
+				<span id="sidebarTitleSpan">
+					TJET DOCS
+				</span>
+				<span class="bp3-icon-standard bp3-icon-airplane"></span>
+			</a>
+		</div>
+		<div class="mobileSidebarSpacer">
+
+		</div>
+		<div class="mobileSidebarElement" style="color: #738694">
+			{{ $.Site.Params.version }}
+		</div>
+	</div>
+	<div class="mobileHeaderFlexContainer">
+		<div class="bp3-select mobileSidebarNavDropdown">
+			<select onchange="window.location.replace(this.options[this.selectedIndex].value)">
+				<option value="/">Go to section...</option>
+				{{ $currentPage := . }}
+				{{ range .Site.Menus.main }}
+				<option value="{{ .URL }}"
+					{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}selected{{end}}>
+					{{ .Name }}</option>
+				{{ end }}
+			</select>
+		</div>
+		{{ $currentPage := . }}
+		{{ range .Site.Menus.main }}
+		{{ if .Page.IsNode }}
+		{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+		<div class="bp3-select mobileSidebarNavDropdown {{if eq (len .Page.Pages) 0}}.bp3-disabled{{end}}"
+			{{if eq (len .Page.Pages) 0}}:disabled{{end}}>
+			<select onchange="window.location.replace(this.options[this.selectedIndex].value)">
+				<option value="/">Go to page...</option>
+				{{ range .Page.Pages }}
+				<option value="{{ .URL }}" {{ if eq $currentPage.URL .URL }}selected{{end}}>
+					{{ .Name }}</option>
+				{{ end }}
+			</select>
+		</div>
+		{{ end }}
+		{{ end }}
+		{{ end }}
+	</div>
+</div>
+<div id="sidebarContainer" class="dark-scrollbar">
 	<a href="{{.Site.Home.URL}}">
 		<div id="sidebarTitleWrapper"
-			class="titleContainer titleContainerExpanded {{ if eq .Site.Home.URL .URL }}titleContainerSelected{{ end }}">
+			class="fullMenu titleContainer titleContainerExpanded {{ if eq .Site.Home.URL .URL }}titleContainerSelected{{ end }}">
 			<span id="sidebarTitleSpan">
 				TJET DOCS
 			</span>
@@ -36,5 +84,4 @@
 	{{ end }}
 	{{ end }}
 	{{ end }}
-
 </div>
