@@ -34,7 +34,7 @@
 		<div class="bp3-select mobileSidebarNavDropdown {{if eq (len .Page.Pages) 0}}.bp3-disabled{{end}}"
 			{{if eq (len .Page.Pages) 0}}:disabled{{end}}>
 			<select onchange="window.location.replace(this.options[this.selectedIndex].value)">
-				<option value="/">Go to page...</option>
+				<option value="{{.Page.URL}}">Go to page...</option>
 				{{ range .Page.Pages }}
 				<option value="{{ .URL }}" {{ if eq $currentPage.URL .URL }}selected{{end}}>
 					{{ .Name }}</option>
