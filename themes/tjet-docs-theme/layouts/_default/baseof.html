@@ -16,8 +16,8 @@
 	</script>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,user-scalable=0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 	<title>{{ .Title }}</title>
 
@@ -43,6 +43,7 @@
 </head>
 
 <body class="dark-scrollbar">
+	{{ partial "sidebar.html" . }}
 	<div id="contentContainer" class="dark-scrollbar">
 		{{ partial "header" . }}
 		<div class="bp3-card bp3-elevation-two flexiblePageCard flexiblePagePadding dark-scrollbar">
@@ -52,7 +53,6 @@
 		</div>
 		{{ partial "footer" . }}
 	</div>
-	{{ partial "sidebar.html" . }}
 </body>
 
 </html>

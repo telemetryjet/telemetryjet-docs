@@ -154,9 +154,13 @@ body {
     margin-bottom: 5px;
 }
 
-@media(max-width: 800px) {
+.mobileNoJavascriptWarning {
+    margin-top: 5px;
+}
+
+@media(max-width: 600px) {
     #sidebarMobileHeader {
-        position: fixed;
+        position: relative;
         top: 0;
         width: 100%;
         background-color: #293742;
@@ -185,7 +189,7 @@ body {
     }
 
     #contentContainer {
-        margin-top: 85px;
+        margin-top: 0px;
         margin-left: 0px;
     }
 }
