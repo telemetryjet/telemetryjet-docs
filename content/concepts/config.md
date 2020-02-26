@@ -19,7 +19,9 @@ The `.telemetryjet` file must contain JSON with a flat structure. If the file is
 
 {{< highlight json >}}
 {
-    "data_dir" : "~/telemetryjet"
+    "data_dir" : "~/telemetryjet",
+    "logging" : true,
+    "log_level" : "debug"
 }
 {{< / highlight >}}
 
@@ -51,14 +53,20 @@ export TELEMETRYJET_DATA_DIR=../data
       <td>"~/telemetryjet"</td>
       <td>Path to the "data directory", a folder which holds all the files TelemetryJet exports, such as the SQLite database.</td>
     </tr>
-  </tbody>
-  <tbody>
     <tr>
       <td>logging</td>
       <td>LOGGING</td>
       <td>Boolean</td>
       <td>true</td>
-      <td>Turns all logging on and off. Note: This will only affect initialization log messages if set via environment variable.</td>
+      <td>Turns all logging on and off. Note: This will only affect startup log messages if set via environment variable.</td>
+    </tr>
+    <tr>
+      <td>log_level</td>
+      <td>LOG_LEVEL</td>
+      <td>String</td>
+      <td>"header"</td>
+      <td>Filters logging by level. Options: <i>header, debug, info, warning, error, none.</i> Note: This will only affect startup log messages if set via environment variable. 
+      </td>
     </tr>
   </tbody>
 </table>
