@@ -68,6 +68,14 @@ export TELEMETRYJET_DATA_DIR=../data
       <td>Filters logging by level. Options: <i>header, debug, info, warning, error, none.</i> Note: This will only affect startup log messages if set via environment variable. 
       </td>
     </tr>
+    <tr>
+      <td>rest_api_port</td>
+      <td>REST_API_PORT</td>
+      <td>Integer</td>
+      <td>9000</td>
+      <td>Port that the REST API will run on. If this port is in use, the program will throw an error and exit.
+      </td>
+    </tr>
   </tbody>
 </table>
 
