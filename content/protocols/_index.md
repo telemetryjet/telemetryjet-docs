@@ -1,5 +1,5 @@
 ---
-title: "Device Config"
+title: "Protocols"
 weight: 4
 ---
 

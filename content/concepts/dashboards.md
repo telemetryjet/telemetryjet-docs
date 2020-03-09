@@ -1,5 +1,6 @@
 ---
 title: "Dashboards"
+weight: 3
 ---
 
 ### Creating a Dashboard

@@ -1,5 +1,6 @@
 ---
 title: "Devices"
+weight: 2
 ---
 
 ### Creating a Device
