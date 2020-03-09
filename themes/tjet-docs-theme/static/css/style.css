@@ -96,7 +96,7 @@ body {
     flex-direction: column;
     color: #738694;
     flex: 0 0 auto;
-    min-height: 100vh;
+    min-height: 500px;
 }
 
 .mobileSidebarElement {
