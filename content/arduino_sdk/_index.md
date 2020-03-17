@@ -3,7 +3,7 @@ title: "Arduino SDK"
 weight: 6
 ---
 
-The Arduino SDK provides an implementation of the TelemetryJet protocol, which is the simplest way to connect and communicate between your server and devices. The TelemetryJet protocol packs arbitrary data types into a binary format optimized for small transmission size.
+The Arduino SDK provides an implementation of the TelemetryJet protocol, which is the simplest way to connect and communicate between your server and devices. The TelemetryJet protocol packs arbitrary data into a "key-length-value" format optimized for small transmission size. For more information, see the TJet-Serial protocol page.
 
 - init(SerialPort) - Initializes the protocol on a given Serial object.
 - start() - Starts the connection.
