@@ -12,11 +12,11 @@ This repository contains code and content for the TelemetryJet documentation web
 
 The documentation site uses [Hugo](https://gohugo.io/) to generate static HTML from markdown files. These instructions assume that you have [installed Hugo](https://gohugo.io/getting-started/quick-start/) and are familiar with its basic usage.
 
-### Run Dev Server
-To run a development server, use `hugo server -D`. This will serve and live update all pages.
+### Run Development Server
+To run a development server, use `hugo server -D`. This will serve and live update all pages, including drafts.
 
 ### Build Documentation
-To build the documentation locally, use `hugo`. This will build the documentation into the `public` folder. 
+To build the documentation locally, use `hugo`. This will build the documentation into the `public` folder as static HTML. These files should not be uploaded to git; they are ignored and will be built by Netlify when a release is merged into the master branch. 
 
 ### Add or Update Pages
 The `content/` folder contains markdown files which are rendered into the documentation. Each directory represents a documentation section. Markdown files within a directory will be rendered as pages within that section. New pages can be added by creating a `.md` file in the proper section subdirectory.
