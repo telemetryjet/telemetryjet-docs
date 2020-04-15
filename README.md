@@ -1,6 +1,8 @@
 # TelemetryJet Documentation
 
-This repository contains code and content for the TelemetryJet documentation website. The master branch of the repository is automatically deployed to https://docs.telemetryjet.com/ via Netlify. 
+This repository contains code and content for the TelemetryJet documentation website. The latest documentation is automatically deployed to https://docs.telemetryjet.com/ via Netlify. 
+
+If you are looking for the TelemetryJet Documentation, please see the [Documentation Site](https://docs.telemetryjet.com/).
 
 ## How to Contribute
 
