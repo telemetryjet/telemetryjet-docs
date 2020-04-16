@@ -4,6 +4,13 @@ This repository contains code and content for the TelemetryJet documentation web
 
 If you are looking for the TelemetryJet Documentation, please see the [Documentation Site](https://docs.telemetryjet.com/).
 
+## Deploy Status
+
+|Branch|Deploy Status|Target|
+|------|-------------|------|
+|`develop`|![Netlify Status](https://api.netlify.com/api/v1/badges/a63b2138-c1ff-4dd6-a46c-a0b880eabf29/deploy-status)|https://docs.dev.telemetryjet.com/|
+|`master`|![Netlify Status](https://api.netlify.com/api/v1/badges/892ce996-8989-42d4-8773-22784354e48a/deploy-status)|https://docs.telemetryjet.com/|
+
 ## How to Contribute
 
 - If you have a request for expanded documentation or question that is not answered in the docs, please open an issue!
