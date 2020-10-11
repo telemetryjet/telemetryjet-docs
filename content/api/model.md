@@ -12,6 +12,8 @@ Used when creating/modifying a system. Includes only user editable fields on the
 - `id`: Integer
 - `name`: String
 
+Notes: Exactly one system will be active at each time. The database will always have at least one system. When changing the active system, this will update the server to control the new system, which will persist through a server restart. 
+
 ### Device
 - Name: String
 

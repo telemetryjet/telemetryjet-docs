@@ -1,0 +1,25 @@
+<div id="sidebarMobileHeader" class="mobileMenu bp3-dark">
+</div>
+<div id="sidebarContainer" class="dark-scrollbar">
+	{{ $currentPage := . }}
+	{{ range .Site.Menus.main }}
+	<a href="{{ .URL }}">
+		<div
+			class="buttonContainer buttonContainerExpanded buttonContainerLarge buttonContainerLargeExpanded {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}buttonContainerSelected{{end}}">
+			<div class="buttonText">{{ .Name }} </div>
+		</div>
+	</a>
+	{{ if .Page.IsNode }}
+	{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+	{{ range .Page.Pages }}
+	<a href="{{ .URL }}">
+		<div
+			class="buttonContainer buttonContainerExpanded buttonContainerSmall buttonContainerSmallExpanded {{ if eq $currentPage.URL .URL }}buttonContainerSmallSelected{{ end }}">
+			<div class="buttonText">{{ .Name }} </div>
+		</div>
+	</a>
+	{{ end }}
+	{{ end }}
+	{{ end }}
+	{{ end }}
+</div>

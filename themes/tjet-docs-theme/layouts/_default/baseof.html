@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,user-scalable=0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<title>{{ .Title }}</title>
+	<title>{{ .Title }} | TelemetryJet Docs</title>
 
 	{{ with .Site.Params.description }}
 	<meta name="description" content="{{ . }}">
@@ -16,49 +16,49 @@
 	<meta name="author" content="{{ . }}">
 	{{ end }}
 
+	<!-- Site icon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+	<link rel="manifest" href="/img/site.webmanifest">
+	
 	<!-- Style dependencies -->
-	<link rel="preload" href="/unpkg/css/normalize.css" as="stylesheet" />
 	<link href="/unpkg/css/normalize.css" rel="stylesheet" />
 
 	<!-- Blueprint stylesheets -->
-	<link rel="preload" href="/unpkg/blueprintjs/blueprint-icons.css" as="stylesheet" />
-	<link rel="preload" href="/unpkg/blueprintjs/blueprint.css" as="stylesheet" />
-	<link rel="preload" href="/unpkg/blueprintjs/icons-16.woff" as="font" />
-	<link rel="preload" href="/unpkg/blueprintjs/icons-16.ttf" as="font" />
-	<link rel="preload" href="/unpkg/blueprintjs/icons-20.woff" as="font" />
-	<link rel="preload" href="/unpkg/blueprintjs/icons-20.ttf" as="font" />
 	<link href="/unpkg/blueprintjs/blueprint-icons.css" rel="stylesheet" />
 	<link href="/unpkg/blueprintjs/blueprint.css" rel="stylesheet" />
 
-	<!-- Core site stylesheets -->
-	<link rel="preload" href="/css/fonts.css" as="stylesheet">
-	<link rel="preload" href="/css/scrollbars.css" as="stylesheet">
-	<link rel="preload" href="/css/style.css" as="stylesheet">
-	<link rel="preload" href="/fonts/DINNextLTW04-Regular.woff" as="font" />
-	<link rel="preload" href="/fonts/DINNextLTW04-Italic.woff" as="font" />
-	<link rel="preload" href="/fonts/DINNextLTW04-Medium.woff" as="font" />
-	<link rel="preload" href="/fonts/DINNextLTW04-Bold.woff" as="font" />
-	<link rel="preload" href="/fonts/DINNextLTW04-Heavy.woff" as="font" />
-	<link rel="preload" href="/fonts/DINNextLTW04-Light.woff" as="font" />
-	<link rel="preload" href="/fonts/blenderpro-medium-webfont.woff" as="font" />
-	<link rel="preload" href="/fonts/blenderpro-bold-webfont.woff" as="font" />
-
 	<link rel="stylesheet" href="/css/fonts.css">
 	<link rel="stylesheet" href="/css/scrollbars.css">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/style_v2.css">
+	<link rel="stylesheet" href="/css/header.css">
+	<link rel="stylesheet" href="/css/footer.css">
+	<link rel="stylesheet" href="/css/sidebar.css">
 </head>
 
-<body class="dark-scrollbar">
-	{{ partial "sidebar.html" . }}
-	<div id="contentContainer" class="dark-scrollbar">
-		{{ partial "header" . }}
-		<div class="bp3-card bp3-elevation-two flexiblePageCard flexiblePagePadding dark-scrollbar">
-			<div class="copyWrapper">
-				{{ block "main" . }}{{ end }}
-			</div>
+<body class="bp3-light">
+	<div id="rootFlexContent">
+		{{ partial "headerAlert.html" . }}
+		{{ partial "headerPrimary.html" . }}
+		{{ partial "headerSecondary.html" . }}
+		<div id="contentContainer">
+			<section>
+				<div id="content">
+					<div id="contentLeftSidebar">
+						{{ partial "leftSidebar.html" . }}
+					</div>
+					<div id="contentCenter">
+						{{ block "main" . }}{{ end }}
+					</div>
+					{{ partial "rightSidebar.html" . }}
+				</div>
+			</section>
 		</div>
-		{{ partial "footer" . }}
+		{{ partial "footer.html" . }}
 	</div>
+	<script src="/js/jquery-3.5.1.js"></script>
+	<script src="/js/enhancements.js"></script>
 </body>
 
 </html>

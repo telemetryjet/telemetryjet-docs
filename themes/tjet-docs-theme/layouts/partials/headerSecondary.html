@@ -1,0 +1,39 @@
+<div id="headerSecondary">
+    <section class="noJsHidden">
+        <div class="mobileHeaderFlexContainer ">
+            <div class="bp3-select bp3-minimal mobileSidebarNavDropdown">
+                <select onchange="window.location.replace(this.options[this.selectedIndex].value)">
+                    <option value="/">Go to section...</option>
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                    <option value="{{ .URL }}"
+                        {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}selected{{end}}>
+                        {{ .Name }}</option>
+                    {{ end }}
+                </select>
+            </div>
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            {{ if .Page.IsNode }}
+            {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+            <div class="bp3-select bp3-minimal mobileSidebarNavDropdown {{if eq (len .Page.Pages) 0}}.bp3-disabled{{end}}"
+                {{if eq (len .Page.Pages) 0}}:disabled{{end}}>
+                <select onchange="window.location.replace(this.options[this.selectedIndex].value)">
+                    <option value="{{.Page.URL}}">Go to page...</option>
+                    {{ range .Page.Pages }}
+                    <option value="{{ .URL }}" {{ if eq $currentPage.URL .URL }}selected{{end}}>
+                        {{ .Name }}</option>
+                    {{ end }}
+                </select>
+            </div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+        </div>
+    </section>
+    <noscript>
+        <section id="headerSecondaryNoscriptPath">
+            {{ .Page.Name }}
+        </section>
+    </noscript>
+</div>

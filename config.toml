@@ -7,3 +7,7 @@ pluralizelisttitles = false
 
 [params]
     version = "v0.1.0"
+    siteUrl = "http://localhost:1313"
+    docsUrl = "http://localhost:1313"
+    filesUrl = "http://localhost:1313"
+    cloudUrl = "http://localhost:8080"

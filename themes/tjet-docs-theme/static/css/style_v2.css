@@ -1,0 +1,147 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #D8E1E8;
+    color: #10161A;
+    font-family: "DIN", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: relative;
+    line-height: 1.5;
+}
+
+#rootFlexContent {
+    position: relative;
+    top: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#headerAlert {
+    background-color: #bfccd6;
+    color: #394b59;
+    font-size: 13px;
+}
+#headerAlert section {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#headerPrimary {
+    background-color: #CED9E0;
+    color: #10161A;
+}
+
+#header {
+    padding-top: 5px;
+    height: 60px;
+}
+
+#headerSecondary {
+    background-color: #CED9E0;
+    color: #10161A;
+    border-top: 1px solid #BFCCD6;
+    border-bottom: 1px solid #BFCCD6;
+    margin-bottom: 10px;
+    min-height: 32px;
+    max-height: 32px;
+}
+#headerSecondaryNoscriptPath {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+#headerSecondary select {
+    border-radius: 0px;
+    font-size: 13px;
+}
+
+#contentContainer {
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+#content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+#contentCenter {
+    padding: 20px;
+    flex: 1 1 auto;
+}
+
+section {
+    position: relative;
+    max-width: 1200px;
+    overflow: visible;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+}
+
+.headerNoJsWarning {
+    display: none;
+    border-radius: 0px;
+    background-color: rgba(217, 130, 43, 0.15);
+    color: #bf7326;
+}
+
+/* Mobile */
+@media screen and (max-width: 599px) {
+    #headerAlert section {
+        max-width: 100%;
+    }
+
+    section {
+        max-width: 100%;
+    }
+    .headerNoJsWarning {
+        display: block;
+    }
+}
+
+/* Small Screen */
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    #headerAlert section {
+        max-width: 100%;
+    }
+
+    section {
+        max-width: 100%;
+    }
+}
+
+/* Medium Screen */
+@media screen and (min-width: 800px) and (max-width: 1099px) {
+    section {
+        max-width: 750px;
+    }
+}
+
+/* Large Screen */
+@media screen and (min-width: 1100px) {
+    section {
+        max-width: 1050px;
+    }
+}
+
+.noJsHidden {
+    display: none;
+}
