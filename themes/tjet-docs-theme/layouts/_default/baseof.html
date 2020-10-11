@@ -45,9 +45,7 @@
 		<div id="contentContainer">
 			<section>
 				<div id="content">
-					<div id="contentLeftSidebar">
-						{{ partial "leftSidebar.html" . }}
-					</div>
+					{{ partial "leftSidebar.html" . }}
 					<div id="contentCenter">
 						{{ block "main" . }}{{ end }}
 					</div>

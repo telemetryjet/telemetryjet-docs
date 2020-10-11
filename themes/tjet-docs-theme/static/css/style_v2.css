@@ -80,10 +80,12 @@ body {
     flex-direction: row;
     justify-content: stretch;
     align-items: stretch;
+    padding-top: 20px;
 }
 
 #contentCenter {
     padding: 20px;
+    padding-top: 0px;
     flex: 1 1 auto;
 }
 
@@ -144,4 +146,15 @@ section {
 
 .noJsHidden {
     display: none;
+}
+
+#backToHomeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#backToHomeButton .bp3-icon {
+    margin-left: 1px;
+    margin-right: 4px;
+    color: #10161A;
 }

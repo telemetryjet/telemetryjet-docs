@@ -116,6 +116,7 @@
 }
 
 #navbarLogo {
+    margin-right: 10px;
     font-size: 20px;
     font-weight: 400;
     display: flex;
