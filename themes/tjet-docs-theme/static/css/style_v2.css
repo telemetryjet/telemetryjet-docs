@@ -28,6 +28,7 @@ body {
     background-color: #bfccd6;
     color: #394b59;
     font-size: 13px;
+    border-bottom: 1px solid #A7B6C2;
 }
 #headerAlert section {
     padding: 10px;

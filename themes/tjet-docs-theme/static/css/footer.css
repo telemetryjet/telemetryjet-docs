@@ -3,7 +3,7 @@
     flex: 0 0 auto;
     width: 100%;
     min-height: 100px;
-    background-color: #293742;
+    color: #10161A;
     font-size: 14px;
     margin-top: 25px;
 }
@@ -11,36 +11,37 @@
 #secondaryFooter {
     position: relative;
     flex: 0 0 auto;
-    color: #8A9BA8;
-    background-color: #202B33;
+    color: #738694;
+    background-color: #CED9E0;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 13px;
+    border-top: 1px solid #BFCCD6;
 }
 
 #secondaryFooter a {
-    color: #8A9BA8;
+    color: #738694;
 }
 
 .footerMoreLink {
-    color: #8A9BA8 !important;
+    color: #738694 !important;
 }
 
 #backToTop {
     display: none;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     bottom: 20px;
     right: 20px;
     float: right;
     cursor: pointer;
     background-image: url('../img/backToTop.svg');
     background-position: center center;
-    opacity: 0.25;
+    opacity: 0.15;
 }
 
 #backToTop:hover {
-    opacity: 0.5;
+    opacity: 0.25;
 }
 
 .primaryFooterContent {
