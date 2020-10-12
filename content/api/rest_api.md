@@ -3,7 +3,7 @@ title: "REST API"
 menu: "api"
 menu:
   api:
-    parent: "cloud_api"
+    parent: "cloud_server"
     title: "Rest API"
 ---
 

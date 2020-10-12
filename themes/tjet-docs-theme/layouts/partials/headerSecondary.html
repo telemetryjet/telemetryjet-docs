@@ -23,6 +23,7 @@
             <div class="secondaryHeaderSectionDivider"></div>
             <div class="bp3-select bp3-minimal mobileSidebarNavDropdown">
                 <select onchange="window.location.replace(this.options[this.selectedIndex].value)">
+                    <option value="/">Go to page...</option>
                     {{ range $menu }}
                         {{ if .HasChildren }}
                         <optgroup label="{{ .Title }}">
