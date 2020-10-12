@@ -1,9 +1,9 @@
 
 #contentLeftSidebar {
     flex: 0 0 auto;
-    min-width: 200px;
+    min-width: 250px;
     display: none;
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
 #contentRightSidebar {

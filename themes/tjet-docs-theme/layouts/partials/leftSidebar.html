@@ -14,7 +14,7 @@
 
 		{{ range $menu }}
 			{{ if .HasChildren }}
-				<div class="sidebarMenuSection">{{ .Title }}</div>
+				<div class="sidebarMenuSection">{{ .Pre }}{{ .Title }}</div>
 				{{ range .Children }}
 					<a href="{{ .URL }}" class="sidebarItemHref">
 						<div

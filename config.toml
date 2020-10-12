@@ -18,19 +18,23 @@ unsafe = true
     [[menu.guides]]
         identifier = "cloud_server"
         title = "Cloud Server"
+        pre = "<span class='bp3-icon bp3-icon-cloud'></span>"
         weight = 1
     [[menu.guides]]
         identifier = "cli"
         title = "Command-Line Client"
+        pre = "<span class='bp3-icon bp3-icon-console'></span>"
         weight = 2
     [[menu.guides]]
         identifier = "arduino_sdk"
         title = "Arduino SDK"
+        pre = "<span class='bp3-icon bp3-icon-console'></span>"
         weight = 3
 
     [[menu.api]]
         identifier = "cloud_server"
         title = "Cloud Server"
+        pre = "<span class='bp3-icon bp3-icon-cloud'></span>"
         weight = 1
     [[menu.api]]
         identifier = "cli"
