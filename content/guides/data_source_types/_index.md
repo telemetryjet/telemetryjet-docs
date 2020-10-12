@@ -1,9 +1,11 @@
 ---
-title: "Protocols"
-weight: 4
+title: "Data Source Types"
+weight: 3
 menu:
   guides:
-    title: "Protocols"
+    parent: "cloud_server"
+    identifier: "cloud_data_source_types"
+    title: "Data Source Types"
 ---
 
 Devices can be configured to interact with data from a wide variety of protocols and transports. This section details how to use each time of available protocol.

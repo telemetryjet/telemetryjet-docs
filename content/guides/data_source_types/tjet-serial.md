@@ -1,7 +1,12 @@
 ---
 title: "TJet Serial"
-weight: 1
+weight: 4
+menu:
+  guides:
+    parent: "cloud_data_source_types"
+    title: "TelemetryJet Serial"
 ---
+
 
 ### TelemetryJet Serial Protocol
 The TJet Serial protocol is a "key-length-value" protocol optimized for small transmission size. The protocol transmits data in key/value pairs, and contains error detection redundancies. TJet is an approachable protocol, and can be used to communicate with Arduino projects. The TelemetryJet Arduino SDK implements this protocol.

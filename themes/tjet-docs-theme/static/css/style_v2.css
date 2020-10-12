@@ -182,3 +182,32 @@ hr {
     color: #5C7080 !important;
     text-decoration: none;
 }
+
+pre {
+    font-family: monospace;
+    text-transform: none;
+    background: hsla(0,0%,100%,.7);
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(16,22,26,.15);
+    box-shadow: inset 0 0 0 1px rgba(16,22,26,.15);
+    color: #182026;
+    display: block;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 10px 0;
+    padding: 13px 15px 12px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+code {
+    font-family: monospace;
+    text-transform: none;
+    background: hsla(0,0%,100%,.7);
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(16,22,26,.2);
+    box-shadow: inset 0 0 0 1px rgba(16,22,26,.2);
+    color: #5c7080;
+    font-size: smaller;
+    padding: 2px 5px;
+}

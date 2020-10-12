@@ -8,31 +8,31 @@ menu:
     title: "Overview"
 ---
 
-The Arduino SDK provides an implementation of the TelemetryJet protocol, which is the simplest way to connect and communicate between your server and devices. The TelemetryJet protocol packs arbitrary data into a "key-length-value" format optimized for small transmission size. For more information, see the TJet-Serial protocol page.
+The TelemetryJet Arduino SDK is a lightweight library for communicating sensor and control data to or from microcontrollers. The Arduino SDK is designed primary for ease-of-use, with a simple, flexible API for instantly getting data from your embedded device. The SDK provides a high-level abstraction for getting and setting data and events, and handles the low-level functionality of transmitting those events.
 
-- init(SerialPort) - Initializes the protocol on a given Serial object.
-- start() - Starts the connection.
-- update() - Updates the connection, polling/sending new data.
-- stop() - Stops the connection.
-- addDataPointCallback(key, func) - Adds a function as a callback for new data point
-- removeDataPointCallback(key, func) - Removes a function as a callback for new data point
-- set(key, value) - Sets a data point value.
-- has(key) - Returns true if a data point has a value.
-- get(key) - Gets a data point value.
-- clear(key) - Clears a data point so it has no value. This does not propagate back to the server. This can be used to implement "one-time" commands, using the following pattern:
-```
-if (telemetry.has("test_trigger")) {
-    // Do some one-time action
-    // Clear the data point
-    telemetry.clear("test_trigger")
-}
-```
-After a data point is cleared, it will be send by the server next time its value is updated.
+The TelemetryJet CLI can natively ingest and stream data from the Arduino SDK without any setup. We also provide bindings for the SDK in several languages for use in your own software.
 
-## Features
+The TelemetryJet Arduino SDK is an excellent solution if you are interacting with a single microcontroller in your project. The SDK can be used with or without TelemetryJet itself.
 
-## Philosophy
 
-## Desktop Bindings
+### Features
+- Bidirectional communication; send commands and/or data points in either direction
+- Send and receive data, and cache latest data points on the Arduino SDK
+- Cache expiration times
+- Send and receive one-off events
+- Operates over software or hardware serial, independent of transport mechanism
+- 100% free and open source
 
-{{< youtube DgAFddBqowU >}}
+
+### Philosophy
+The SDK takes an opinionated approach to message parsing and provides high-level functionality.
+The TelemetryJet Arduino SDK is built on top of [MessagePack](https://msgpack.org/index.html), which provides an efficient serialization protocol for arbitrary data. On top of MessagePack, the SDK adds
+an API for bidirectional communication, a data point cache, one-off event triggers, and more.
+
+### Documentation
+Full documentation for the TelemetryJet Arduino SDK is provided on the Documentation Site.
+
+### Desktop Bindings
+
+We provide several bindings for the SDK that can be used by desktop software to interact with the 
+TelemetryJet CLI. Bindings are available in Python, C/C++, Java.

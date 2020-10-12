@@ -4,6 +4,9 @@ title = "TelemetryJet Documentation"
 theme = "tjet-docs-theme"
 pluralizelisttitles = false
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
     version = "v0.1.0"
     siteUrl = "http://localhost:1313"

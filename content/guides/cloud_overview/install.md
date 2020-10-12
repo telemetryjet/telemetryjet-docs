@@ -3,7 +3,7 @@ title: "Installation"
 weight: 2
 menu:
   guides:
-    parent: "get_started"
+    parent: "cloud_overview"
     title: "Installation"
 ---
 

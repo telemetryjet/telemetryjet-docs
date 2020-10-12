@@ -3,7 +3,7 @@ title: "Configuration Options"
 weight: 20
 menu:
   guides:
-    parent: "get_started"
+    parent: "cloud_overview"
     title: "Configuration Options"
 ---
 

@@ -5,7 +5,7 @@ draft: false
 weight: 1
 menu:
   guides:
-    parent: "get_started"
+    parent: "cloud_overview"
     title: "What is TelemetryJet?"
 ---
 
