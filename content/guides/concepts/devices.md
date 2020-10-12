@@ -1,6 +1,10 @@
 ---
 title: "Devices"
 weight: 2
+menu:
+  guides:
+    parent: "concepts"
+    title: "Devices"
 ---
 
 ### Creating a Device

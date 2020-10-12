@@ -1,13 +1,16 @@
 
 #contentLeftSidebar {
     flex: 0 0 auto;
-    min-width: 150px;
+    min-width: 200px;
+    display: none;
+    padding-right: 20px;
 }
 
 #contentRightSidebar {
     flex: 0 0 auto;
     min-width: 150px;
     display: none;
+    padding-left: 20px;
 }
 
 .stickyTableOfContents {
@@ -20,24 +23,24 @@
     overflow: auto;
 }
 
+/* Medium Screen */
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    #contentLeftSidebar {
+        display: block;
+    }
+}
+
 /* Large Screen */
 @media screen and (min-width: 1100px) {
     #contentRightSidebar {
         display: block;
     }
+    #contentLeftSidebar {
+        display: block;
+    }
 }
 
-.stickyTableOfContentsHeader {
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 500;
-    color: #394B59;
-    margin-bottom: 8px;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10+ and Edge */
-    user-select: none; /* Standard syntax */
-}
-.stickyTableOfContentsHeader span {
+.sidebarMenuSection span {
     margin-right: 3px;
 }
 
@@ -52,4 +55,67 @@
     margin-block-start: 0px;
     margin-block-end: 0px;
     padding-inline-start: 0px;
+}
+
+.sidebarMenuItem {
+    padding: 2px;
+    padding-left: 6px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.sidebarMenuSection {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    color: #394B59;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Standard syntax */
+}
+
+.sidebarMenuItemSelected {
+    background-color: #137CBD;
+    color: #FFFFFF;
+}
+.sidebarMenuItemSelected:hover {
+    background-color: #137CBD !important;
+    color: #FFFFFF;
+}
+
+.sidebarMenuItem:hover {
+    background-color: #BFCCD6;
+}
+
+.sidebarMenuItem .bp3-icon {
+    position: absolute;
+    right: 7px;
+    top: 5px;
+}
+
+.sidebarItemHref:hover {
+    text-decoration: none;
+}
+
+.sidebarMenuChildrenExpandable {
+    width: 100%;
+    padding-left: 16px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.sidebarMenuChildrenExpandable::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 3px;
+    bottom: 4px;
+    left: 8px;
+    width: 3px;
+    background-color: #BFCCD6;
 }

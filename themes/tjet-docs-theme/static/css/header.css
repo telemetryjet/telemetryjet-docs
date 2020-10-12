@@ -3,10 +3,6 @@
     overflow: visible;
 }
 
-#header section {
-    padding-left: 14px;
-}
-
 #menu.bp3-light {
     background-color: #CED9E0;
 }
@@ -81,6 +77,11 @@
     .headerWarningContent {
         max-width: 600px;
     }
+    #header section {
+        padding-left: 0px;
+        padding-right: 4px;
+    }
+    
 }
 
 /* Small Screen */
@@ -91,7 +92,7 @@
 }
 
 /* Medium Screen */
-@media screen and (min-width: 800px) and (max-width: 1099px) {
+@media screen and (min-width: 800px) and (max-width: 1100px) {
     .headerWarningContent {
         max-width: 750px;
     }
@@ -141,11 +142,11 @@
 }
 
 .mobileButton {
-    display: none;
+    display: block;
 }
 
 .desktopButton {
-    display: block;
+    display: none;
 }
 
 .mobileMenuOpenButtonNoscript {
@@ -201,6 +202,14 @@
     background-color: #293742;
     border-bottom: 1px solid #182026;
     border-top: 1px solid #394B59;
+}
+
+.mobileHeaderFlexContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
 }
 
 .mobileMenuHeader h4 {
@@ -281,53 +290,15 @@ img.menuSocialIcon {
     }
 }
 
-
-/* Mobile + small screen */
-@media screen and (max-width: 799px) {
-    #header section {
-        max-width: 100%;
-        padding-left: 5px;
-        padding-right: 10px;
-    }
-
-    .mobileMenuOpenButtonNoscript {
-        display: none !important;
-    }
-
-    .mobileButton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+@media screen and (min-width: 800px) {
     .desktopButton {
-        display: none !important;
-    }
-
-    #mobileMenu {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        align-items: stretch;
-    }
-
-    .mobileMenuOpen {
-        left: 35%;
-    }
-
-    .mobileMenuClosed {
-        left: 100%;
-    }
-
-    .mobileMenuBgOpen {
         display: block;
-        background-color: rgba(24, 32, 38, 0.3);
-        z-index: 19;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
     }
+    .mobileButton {
+        display: none;
+    }
+}
 
+.secondaryHeaderSectionDivider {
+    height: 100%;
 }

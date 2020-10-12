@@ -1,6 +1,9 @@
 ---
 title: "API Reference"
-weight: 10
+weight: 2
+menu:
+  root:
+    title: "API Reference"
 ---
 TelemetryJet's API allows interaction with the platform programmatically. The API is made of several components:
 

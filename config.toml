@@ -2,7 +2,6 @@ baseURL = "https://docs.telemetryjet.com/"
 languageCode = "en-us"
 title = "TelemetryJet Documentation"
 theme = "tjet-docs-theme"
-sectionPagesMenu = "main"
 pluralizelisttitles = false
 
 [params]
@@ -11,3 +10,30 @@ pluralizelisttitles = false
     docsUrl = "http://localhost:1313"
     filesUrl = "http://localhost:1313"
     cloudUrl = "http://localhost:8080"
+
+[menu]
+    [[menu.guides]]
+        identifier = "cloud_server"
+        title = "Cloud Server"
+        weight = 1
+    [[menu.guides]]
+        identifier = "cli"
+        title = "Command-Line Client"
+        weight = 2
+    [[menu.guides]]
+        identifier = "arduino_sdk"
+        title = "Arduino SDK"
+        weight = 3
+
+    [[menu.api]]
+        identifier = "cloud_server"
+        title = "Cloud Server"
+        weight = 1
+    [[menu.api]]
+        identifier = "cli"
+        title = "Command-Line Client"
+        weight = 2
+    [[menu.api]]
+        identifier = "arduino_sdk"
+        title = "Arduino SDK"
+        weight = 3

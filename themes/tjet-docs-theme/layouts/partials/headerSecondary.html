@@ -1,39 +1,56 @@
 <div id="headerSecondary">
+    {{ $currentPage := . }}
+    {{ $menu := .Site.Menus.guides }}
+    {{ $menuName := "guides" }}
+    {{ if eq $currentPage.Section "guides" }}
+        {{ $menu = .Site.Menus.guides}}
+        {{ $menuName = "guides" }}
+    {{end}}
+    {{ if eq $currentPage.Section "api" }}
+        {{ $menu = .Site.Menus.api}}
+        {{ $menuName = "api" }}
+    {{end}}
     <section class="noJsHidden">
-        <div class="mobileHeaderFlexContainer ">
+        <div class="mobileHeaderFlexContainer">
             <div class="bp3-select bp3-minimal mobileSidebarNavDropdown">
                 <select onchange="window.location.replace(this.options[this.selectedIndex].value)">
                     <option value="/">Go to section...</option>
-                    {{ $currentPage := . }}
-                    {{ range .Site.Menus.main }}
-                    <option value="{{ .URL }}"
-                        {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}selected{{end}}>
-                        {{ .Name }}</option>
+                    {{ range .Site.Menus.root }}
+                        <option value="{{ .URL }}" {{ if eq .Page.Section $currentPage.Section }}selected{{end}}>{{.Title}}</option>
                     {{ end }}
                 </select>
             </div>
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-            {{ if .Page.IsNode }}
-            {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-            <div class="bp3-select bp3-minimal mobileSidebarNavDropdown {{if eq (len .Page.Pages) 0}}.bp3-disabled{{end}}"
-                {{if eq (len .Page.Pages) 0}}:disabled{{end}}>
+            <div class="secondaryHeaderSectionDivider"></div>
+            <div class="bp3-select bp3-minimal mobileSidebarNavDropdown">
                 <select onchange="window.location.replace(this.options[this.selectedIndex].value)">
-                    <option value="{{.Page.URL}}">Go to page...</option>
-                    {{ range .Page.Pages }}
-                    <option value="{{ .URL }}" {{ if eq $currentPage.URL .URL }}selected{{end}}>
-                        {{ .Name }}</option>
+                    {{ range $menu }}
+                        {{ if .HasChildren }}
+                        <optgroup label="{{ .Title }}">
+                            {{ range .Children }}
+                                <option value="{{ .URL }}" {{ if eq .URL $currentPage.URL }}selected{{end}}>{{ .Title }}</option>
+                                {{if  .HasChildren }}
+                                    {{ range .Children }}
+                                        <option value="{{ .URL }}" {{ if eq .URL $currentPage.URL }}selected{{end}}>&nbsp;&nbsp;&nbsp;{{ .Title }}</option>
+                                    {{ end }}
+                                {{ end }}
+                            {{ end }}
+                        </optgroup>
+                        {{ end }}
                     {{ end }}
                 </select>
             </div>
-            {{ end }}
-            {{ end }}
-            {{ end }}
         </div>
     </section>
     <noscript>
         <section id="headerSecondaryNoscriptPath">
-            {{ .Page.Name }}
+            {{ if eq $menuName "guides" }}
+            Guides
+            {{ end }}
+            {{ if eq $menuName "api" }}
+            API Reference
+            {{ end }}
+            &nbsp;<span class="bp3-icon bp3-icon-chevron-right"></span>&nbsp;
+            {{ $currentPage.Title }}
         </section>
     </noscript>
 </div>

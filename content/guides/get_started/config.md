@@ -1,6 +1,10 @@
 ---
 title: "Configuration Options"
 weight: 20
+menu:
+  guides:
+    parent: "get_started"
+    title: "Configuration Options"
 ---
 
 ## Setup

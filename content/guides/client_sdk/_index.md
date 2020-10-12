@@ -1,6 +1,10 @@
 ---
 title: "Client SDK"
 weight: 5
+menu:
+  guides:
+    parent: "cloud_server"
+    title: "Client SDK"
 ---
 
 Client SDKs are coming soon! Client SDKs are a wrapper around the API

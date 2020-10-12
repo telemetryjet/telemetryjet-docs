@@ -1,25 +1,51 @@
 <div id="contentLeftSidebar">
     <div class="stickyTableOfContents">
 		{{ $currentPage := . }}
-		{{ range .Site.Menus.main }}
-		<a href="{{ .URL }}">
-			<div
-				class="buttonContainer buttonContainerExpanded buttonContainerLarge buttonContainerLargeExpanded {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}buttonContainerSelected{{end}}">
-				<div class="buttonText">{{ .Name }} </div>
-			</div>
-		</a>
-		{{ if .Page.IsNode }}
-		{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-		{{ range .Page.Pages }}
-		<a href="{{ .URL }}">
-			<div
-				class="buttonContainer buttonContainerExpanded buttonContainerSmall buttonContainerSmallExpanded {{ if eq $currentPage.URL .URL }}buttonContainerSmallSelected{{ end }}">
-				<div class="buttonText">{{ .Name }} </div>
-			</div>
-		</a>
-		{{ end }}
-		{{ end }}
-		{{ end }}
+		{{ $menu := .Site.Menus.guides }}
+		{{ $menuName := "guides" }}
+		{{ if eq $currentPage.Section "guides" }}
+			{{ $menu = .Site.Menus.guides}}
+			{{ $menuName = "guides" }}
+		{{end}}
+		{{ if eq $currentPage.Section "api" }}
+			{{ $menu = .Site.Menus.api}}
+			{{ $menuName = "api" }}
+		{{end}}
+
+		{{ range $menu }}
+			{{ if .HasChildren }}
+				<div class="sidebarMenuSection">{{ .Title }}</div>
+				{{ range .Children }}
+					<a href="{{ .URL }}" class="sidebarItemHref">
+						<div
+							class="sidebarMenuItem {{if ($currentPage.IsMenuCurrent $menuName .)}}sidebarMenuItemSelected{{end}}">
+							<div class="buttonText">{{ .Title }}
+								{{if  .HasChildren }}
+								{{if or ($currentPage.IsMenuCurrent $menuName .) ($currentPage.HasMenuCurrent $menuName .)}}
+								<span class="bp3-icon bp3-icon-chevron-down"></span>
+								{{ else }}
+								<span class="bp3-icon bp3-icon-chevron-right"></span>
+								{{ end }}
+								{{ end }}
+							</div>
+						</div>
+					</a>
+					{{if or ($currentPage.IsMenuCurrent $menuName .) ($currentPage.HasMenuCurrent $menuName .)}}
+					{{if  .HasChildren }}
+						<div class="sidebarMenuChildrenExpandable">
+							{{ range .Children }}
+								<a href="{{ .URL }}" class="sidebarItemHref">
+									<div
+										class="sidebarMenuItem {{if ($currentPage.IsMenuCurrent $menuName .)}}sidebarMenuItemSelected{{end}}">
+										<div class="buttonText">{{ .Title }}</div>
+									</div>
+								</a>
+							{{ end }}
+						</div>
+					{{ end }}
+					{{ end }}
+				{{ end }}
+			{{ end }}
 		{{ end }}
 	</div>
 </div>

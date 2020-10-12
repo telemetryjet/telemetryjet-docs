@@ -1,5 +1,10 @@
 ---
 title: "REST API"
+menu: "api"
+menu:
+  api:
+    parent: "cloud_api"
+    title: "Rest API"
 ---
 
 The REST API is used to interact with all configuration in a TelemetryJet system. The REST API can also export summary statistics and historical values for data points.

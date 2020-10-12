@@ -1,6 +1,10 @@
 ---
 title: "Systems"
 weight: 1
+menu:
+  guides:
+    parent: "concepts"
+    title: "Systems"
 ---
 
 ### Creating a System

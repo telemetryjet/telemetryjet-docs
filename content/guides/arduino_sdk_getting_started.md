@@ -1,6 +1,11 @@
 ---
-title: "Arduino SDK"
-weight: 6
+title: "Arduino SDK: Overview"
+weight: 1
+menu:
+  guides:
+    parent: "arduino_sdk"
+    identifier: "arduino_sdk_overview"
+    title: "Overview"
 ---
 
 The Arduino SDK provides an implementation of the TelemetryJet protocol, which is the simplest way to connect and communicate between your server and devices. The TelemetryJet protocol packs arbitrary data into a "key-length-value" format optimized for small transmission size. For more information, see the TJet-Serial protocol page.
@@ -24,3 +29,8 @@ if (telemetry.has("test_trigger")) {
 ```
 After a data point is cleared, it will be send by the server next time its value is updated.
 
+## Features
+
+## Philosophy
+
+## Desktop Bindings

@@ -3,6 +3,10 @@ title: "What is TelemetryJet?"
 date: 2020-02-14T22:01:02-05:00
 draft: false
 weight: 1
+menu:
+  guides:
+    parent: "get_started"
+    title: "What is TelemetryJet?"
 ---
 
 <b>TelemetryJet</b> is a real-time data and control platform for makers.

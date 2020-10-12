@@ -1,6 +1,10 @@
 ---
 title: "Model"
 weight: 1
+menu:
+  api:
+    parent: "cloud_api"
+    title: "Model"
 ---
 
 ### SystemInput
