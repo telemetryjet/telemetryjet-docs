@@ -27,8 +27,8 @@ body {
 }
 
 #headerAlert {
-    background-color: #bfccd6;
-    color: #394b59;
+    background-color: #202b33;
+    color: #bfccd6;
     font-size: 13px;
 }
 #headerAlert section {
@@ -38,8 +38,8 @@ body {
 }
 
 #headerPrimary {
-    background-color: #CED9E0;
-    color: #10161A;
+    background-color: #293742;
+    color: #bfccd6;
 }
 
 #header {
@@ -49,9 +49,9 @@ body {
 }
 
 #headerSecondary {
-    background-color: #CED9E0;
-    color: #10161A;
-    border-top: 1px solid #BFCCD6;
+    background-color: #D8E1E8;;
+    color: #10161a;
+    border-top: 1px solid #bfccd6;
     margin-bottom: 10px;
     min-height: 32px;
     max-height: 32px;
@@ -160,7 +160,7 @@ section {
 #backToHomeButton .bp3-icon {
     margin-left: 1px;
     margin-right: 4px;
-    color: #10161A;
+    color: #bfccd6;
 }
 
 hr {

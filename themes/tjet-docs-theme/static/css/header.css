@@ -3,35 +3,19 @@
     overflow: visible;
 }
 
-#menu.bp3-light {
-    background-color: #CED9E0;
-}
-
-#menu.bp3-dark {
-
+#menu {
     background-color: #293742;
 }
 
-.bp3-dark #header {
+#header {
     background-color: #293742;
     color: white;
 }
-.bp3-light #header {
-    background-color: #CED9E0;
-    color: #10161A;
-}
-.bp3-dark #headerNavBar {
+#headerNavBar {
     background-color: #293742;
     color: white;
 }
-.bp3-light #headerNavBar {
-    background-color: #ced9e0;
-    color: #10161A;
-}
-.bp3-light #navbarLogoIcon {
-    color: #10161A;
-}
-.bp3-dark #navbarLogoIcon {
+#navbarLogoIcon {
     color: white;
 }
 
@@ -41,15 +25,10 @@
 }
 
 #headerWarning {
-    background-color: #202B33;
-    margin-bottom: 5px;
-    color: #BFCCD6;
-    font-size: 13px;
-}
-
-.bp3-light #headerWarning {
     background-color: #BFCCD6;
     color: #394B59;
+    margin-bottom: 5px;
+    font-size: 13px;
 }
 
 .headerWarningContent {
@@ -68,7 +47,7 @@
     visibility: hidden;
 }
 
-.bp3-dark .headerWarningContent .bp3-icon {
+.headerWarningContent .bp3-icon {
     color: #A7B6C2 !important;
 }
 
