@@ -16,6 +16,11 @@
     font-family: monospace;
 }
 
+.secondaryFooterContent span {
+    display: block;
+    float: left;
+}
+
 #secondaryFooter a {
     color: #738694;
 }
@@ -27,19 +32,28 @@
 #backToTop {
     display: none;
     position: absolute;
-    width: 35px;
-    height: 35px;
-    bottom: 20px;
-    right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
     float: right;
     cursor: pointer;
-    background-image: url('../img/backToTop.svg');
+    color: #738694;
+    background-color: #CED9E0;
     background-position: center center;
-    opacity: 0.15;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 #backToTop:hover {
-    opacity: 0.25;
+    color: #394B59;
+    background-color: #BFCCD6;
+}
+
+#backToTop span {
+    margin-right: 5px;
 }
 
 .primaryFooterContent {

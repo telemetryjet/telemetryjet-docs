@@ -47,7 +47,10 @@
 
 .stickyTableOfContents a {
     color: #394B59;
+}
 
+.stickyTableOfContents ul {
+    padding: 0px;
 }
 
 .stickyTableOfContents ul {

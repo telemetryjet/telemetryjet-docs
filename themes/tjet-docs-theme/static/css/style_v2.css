@@ -106,37 +106,23 @@ section {
 }
 
 #header section {
-    padding-left: 14px;
+    padding-left: 5px;
+    padding-right: 10px;
 }
 #headerSecondary section {
-    padding-left: 14px;
+    padding-left: 5px;
+    padding-right: 10px;
 }
 
 .headerNoJsWarning {
-    display: none;
+    display: block;
     border-radius: 0px;
     background-color: rgba(217, 130, 43, 0.15);
     color: #bf7326;
 }
 
-/* Mobile */
-@media screen and (max-width: 599px) {
-    #headerAlert section {
-        max-width: 100%;
-    }
-
-    section {
-        max-width: 100%;
-    }
-
-
-    .headerNoJsWarning {
-        display: block;
-    }
-}
-
 /* Small Screen */
-@media screen and (min-width: 600px) and (max-width: 799px) {
+@media screen and (min-width: 600px) {
     #headerAlert section {
         max-width: 100%;
     }
@@ -155,16 +141,51 @@ section {
 }
 
 /* Medium Screen */
-@media screen and (min-width: 800px) and (max-width: 1100px) {
+@media screen and (min-width: 800px) {
+    .headerNoJsWarning {
+        display: none;
+    }
+
+    #headerAlert section {
+        max-width: 100%;
+    }
+
     section {
-        max-width: 750px;
+        max-width: 100%;
+    }
+
+    #contentContainer section {
+        padding-right: 40px;
+    }
+
+    #header section {
+        padding-left: 14px;
+        padding-right: 25px;
+    }
+    #headerSecondary section {
+        padding-left: 14px;
+        padding-right: 25px;
     }
 }
 
 /* Large Screen */
 @media screen and (min-width: 1100px) {
+    #headerAlert section {
+        max-width: 1050px;
+    }
     section {
         max-width: 1050px;
+    }
+    #contentContainer section {
+        padding-right: 25px;
+    }
+    #header section {
+        padding-left: 14px;
+        padding-right: 25px;
+    }
+    #headerSecondary section {
+        padding-left: 14px;
+        padding-right: 25px;
     }
 }
 
