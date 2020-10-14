@@ -1,12 +1,12 @@
 ---
-title: "Terminology"
+title: "Concepts"
 date: 2020-02-14T22:01:02-05:00
 draft: false
 weight: 2
 menu:
   guides:
     parent: "cloud_overview"
-    title: "Terminology"
+    title: "Concepts"
 ---
 
 

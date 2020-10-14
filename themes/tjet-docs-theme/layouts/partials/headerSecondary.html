@@ -45,13 +45,13 @@
     <noscript>
         <section id="headerSecondaryNoscriptPath">
             {{ if eq $menuName "guides" }}
-            Guides
+            <a href="/guides/">Guides</a>
             {{ end }}
             {{ if eq $menuName "api" }}
-            API Reference
+            <a href="/api/">API Reference</a>
             {{ end }}
             &nbsp;<span class="bp3-icon bp3-icon-chevron-right"></span>&nbsp;
-            {{ $currentPage.Title }}
+            <a href="{{ .URL }}">{{ $currentPage.Title }}</a>
         </section>
     </noscript>
 </div>

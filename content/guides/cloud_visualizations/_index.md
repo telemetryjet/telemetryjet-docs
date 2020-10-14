@@ -1,6 +1,6 @@
 ---
 title: "Visualizations"
-weight: 4
+weight: 5
 menu:
   guides:
     parent: "cloud_server"

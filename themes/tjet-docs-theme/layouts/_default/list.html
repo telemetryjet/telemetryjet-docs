@@ -6,12 +6,5 @@
 		{{ with .Content }}<div>{{ . }}</div>{{ end }}
 	</div>
 	{{ end }}
-
-	<b>Pages in this Section:</b><br />
-	<ul>
-		{{ range .Paginator.Pages }}
-		<li><a href="{{ .URL }}">{{ .Name }}</a><br /></li>
-		{{ end }}
-	</ul>
 </main>
 {{ end }}

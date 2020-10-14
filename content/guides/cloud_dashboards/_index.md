@@ -1,6 +1,6 @@
 ---
 title: "Dashboards"
-weight: 5
+weight: 6
 menu:
   guides:
     parent: "cloud_server"
@@ -25,3 +25,5 @@ The time scrubber is shared across all visualizations in a dashboard.
 ### Link Sharing
 
 ### Feed Sharing
+
+### Delete a Dashboard

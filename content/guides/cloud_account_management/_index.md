@@ -1,6 +1,6 @@
 ---
 title: "Account Management"
-weight: 10
+weight: 21
 menu:
   guides:
     parent: "cloud_server"

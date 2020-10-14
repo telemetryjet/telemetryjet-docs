@@ -49,7 +49,7 @@ body {
 }
 
 #headerSecondary {
-    background-color: #D8E1E8;;
+    background-color: #D8E1E8;
     color: #10161a;
     border-top: 1px solid #bfccd6;
     margin-bottom: 10px;
@@ -57,6 +57,9 @@ body {
     max-height: 32px;
     -webkit-box-shadow: 0 0 0 1px rgba(16,22,26,.04), 0 1px 1px rgba(16,22,26,.08), 0 2px 6px rgba(16,22,26,.08);
     box-shadow: 0 0 0 1px rgba(16,22,26,.04), 0 1px 1px rgba(16,22,26,.08), 0 2px 6px rgba(16,22,26,.08);
+}
+#headerSecondary a {
+    color: #10161a;
 }
 #headerSecondaryNoscriptPath {
     display: flex;
@@ -97,9 +100,16 @@ section {
     position: relative;
     max-width: 1200px;
     overflow: visible;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left:25px;
+    padding-right:25px;
     margin: 0 auto;
+}
+
+#header section {
+    padding-left: 14px;
+}
+#headerSecondary section {
+    padding-left: 14px;
 }
 
 .headerNoJsWarning {
@@ -118,6 +128,8 @@ section {
     section {
         max-width: 100%;
     }
+
+
     .headerNoJsWarning {
         display: block;
     }
@@ -127,6 +139,14 @@ section {
 @media screen and (min-width: 600px) and (max-width: 799px) {
     #headerAlert section {
         max-width: 100%;
+    }
+    #header section {
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    #headerSecondary section {
+        padding-left: 5px;
+        padding-right: 10px;
     }
 
     section {
@@ -170,7 +190,7 @@ hr {
     margin-bottom: 10px;
 }
 
-#suggestEditButton a {
+.suggestEditButton a {
     color: #8A9BA8 !important;
     text-decoration: none;
     display: flex;
@@ -178,9 +198,24 @@ hr {
     justify-content: flex-start;
     align-items: center;
 }
-#suggestEditButton a:hover {
+.suggestEditButton a:hover {
     color: #5C7080 !important;
     text-decoration: none;
+}
+#suggestEditButtonMobile {
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+}
+#suggestEditButtonMobile a {
+    float: right;
+    margin-top: 5px;
+}
+/* Large Screen */
+@media screen and (min-width: 1100px) {
+    #suggestEditButtonMobile {
+        display: none;
+    }
 }
 
 pre {

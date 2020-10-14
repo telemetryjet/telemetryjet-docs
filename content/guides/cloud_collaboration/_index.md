@@ -1,6 +1,6 @@
 ---
 title: "Collaboration"
-weight: 6
+weight: 20
 menu:
   guides:
     parent: "cloud_server"
