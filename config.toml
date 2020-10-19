@@ -16,8 +16,8 @@ unsafe = true
 
 [menu]
     [[menu.guides]]
-        identifier = "cloud_server"
-        title = "Cloud Server"
+        identifier = "server"
+        title = "Server"
         pre = "<span class='bp3-icon bp3-icon-cloud'></span>"
         weight = 1
     [[menu.guides]]
@@ -32,8 +32,8 @@ unsafe = true
         weight = 3
 
     [[menu.api]]
-        identifier = "cloud_server"
-        title = "Cloud Server"
+        identifier = "server"
+        title = "Server"
         pre = "<span class='bp3-icon bp3-icon-cloud'></span>"
         weight = 1
     [[menu.api]]

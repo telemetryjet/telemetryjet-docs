@@ -3,7 +3,7 @@ title: "Dashboards"
 weight: 6
 menu:
   guides:
-    parent: "cloud_server"
+    parent: "server"
     identifier: "cloud_dashboards"
     title: "Dashboards"
 ---

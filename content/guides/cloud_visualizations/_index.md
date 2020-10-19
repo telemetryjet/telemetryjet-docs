@@ -3,7 +3,7 @@ title: "Visualizations"
 weight: 5
 menu:
   guides:
-    parent: "cloud_server"
+    parent: "server"
     identifier: "cloud_visualizations"
     title: "Visualizations"
 ---

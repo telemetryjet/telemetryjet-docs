@@ -3,7 +3,7 @@ title: "Model"
 weight: 1
 menu:
   api:
-    parent: "cloud_server"
+    parent: "server"
     title: "Model"
 ---
 

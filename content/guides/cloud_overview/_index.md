@@ -3,7 +3,7 @@ title: "Overview"
 weight: -1
 menu:
   guides:
-    parent: "cloud_server"
+    parent: "server"
     identifier: "cloud_overview"
     title: "Overview"
 ---

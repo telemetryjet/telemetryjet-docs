@@ -3,7 +3,7 @@ title: "Collaboration"
 weight: 20
 menu:
   guides:
-    parent: "cloud_server"
+    parent: "server"
     identifier: "cloud_collaboration"
     title: "Collaboration"
 ---

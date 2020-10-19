@@ -3,7 +3,7 @@ title: "Self Hosting TelemetryJet"
 weight: 11
 menu:
   guides:
-    parent: "cloud_server"
+    parent: "server"
     identifier: "cloud_self_hosting"
     title: "Self Hosting"
 draft: true

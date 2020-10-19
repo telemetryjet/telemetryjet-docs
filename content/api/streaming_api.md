@@ -3,7 +3,7 @@ title: "Streaming API"
 menu: "api"
 menu:
   api:
-    parent: "cloud_server"
+    parent: "server"
     title: "Streaming API"
 ---
 
