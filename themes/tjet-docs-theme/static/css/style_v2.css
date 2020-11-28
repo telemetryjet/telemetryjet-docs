@@ -267,3 +267,45 @@ code {
     font-size: smaller;
     padding: 2px 5px;
 }
+
+.apiCard {
+    padding: 0px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    background-color: #EBF1F5;
+}
+
+.apiCardHeading {
+    padding: 5px;
+    padding-left: 20px;
+    border-bottom: 1px solid rgba(16,22,26,.15);
+}
+.apiCardHeading h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+}
+
+
+.apiCardHeading code {
+    border: none;
+    box-shadow: none;
+    background: none !important;
+    padding: 0px;
+}
+
+.apiCardContent {
+    padding: 20px;
+}
+
+.apiCardContent pre {
+    border: none;
+    box-shadow: none;
+    background-color: #202b33;
+    color: #bfccd6;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+    border-radius: 0px;
+    padding-left: 20px;
+    white-space: pre-wrap;
+}

@@ -22,7 +22,7 @@ unsafe = true
         weight = 1
     [[menu.guides]]
         identifier = "cli"
-        title = "Command-Line Client"
+        title = "Command-Line Interface"
         pre = "<span class='bp3-icon bp3-icon-console'></span>"
         weight = 2
     [[menu.guides]]
@@ -38,9 +38,11 @@ unsafe = true
         weight = 1
     [[menu.api]]
         identifier = "cli"
-        title = "Command-Line Client"
+        title = "Command-Line Interface"
+        pre = "<span class='bp3-icon bp3-icon-console'></span>"
         weight = 2
     [[menu.api]]
         identifier = "arduino_sdk"
         title = "Arduino SDK"
+        pre = "<span class='bp3-icon bp3-icon-console'></span>"
         weight = 3
