@@ -1,7 +1,7 @@
 <div id="headerSecondary">
     {{ $currentPage := . }}
     {{ $menu := .Site.Menus.server }}
-    {{ $menuName := "server" }}
+    {{ $menuName := "home" }}
     {{ if eq $currentPage.Section "server" }}
         {{ $menu = .Site.Menus.server}}
         {{ $menuName = "server" }}
@@ -48,13 +48,15 @@
     </section>
     <noscript>
         <section id="headerSecondaryNoscriptPath">
-            {{ if eq $menuName "guides" }}
-            <a href="/guides/">Guides</a>
+            {{ if eq $menuName "server" }}
+            <a href="/server/">Server</a>&nbsp;<span class="bp3-icon bp3-icon-chevron-right"></span>&nbsp;
             {{ end }}
-            {{ if eq $menuName "api" }}
-            <a href="/api/">API Reference</a>
+            {{ if eq $menuName "cli" }}
+            <a href="/cli/">CLI</a>&nbsp;<span class="bp3-icon bp3-icon-chevron-right"></span>&nbsp;
             {{ end }}
-            &nbsp;<span class="bp3-icon bp3-icon-chevron-right"></span>&nbsp;
+            {{ if eq $menuName "arduino_sdk" }}
+            <a href="/arduino_sdk/">Arduino SDK</a>&nbsp;<span class="bp3-icon bp3-icon-chevron-right"></span>&nbsp;
+            {{ end }}
             <a href="{{ .URL }}">{{ $currentPage.Title }}</a>
         </section>
     </noscript>

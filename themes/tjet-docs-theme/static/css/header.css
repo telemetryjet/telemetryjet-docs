@@ -273,6 +273,15 @@ img.menuSocialIcon {
     }
 }
 
+.tabletButton {
+    display: none;
+}
+@media screen and (min-width: 500px) {
+    .tabletButton {
+        display: block;
+    }
+}
+
 .secondaryHeaderSectionDivider {
     height: 100%;
 }
