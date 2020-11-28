@@ -15,34 +15,59 @@ unsafe = true
     cloudUrl = "http://localhost:8080"
 
 [menu]
-    [[menu.guides]]
-        identifier = "server"
-        title = "Server"
-        pre = "<span class='bp3-icon bp3-icon-cloud'></span>"
+    [[menu.home]]
+        identifier = "home_sections"
+        title = "Sections"
+        pre = "<span class='bp3-icon bp3-icon-bookmark'></span>"
         weight = 1
-    [[menu.guides]]
-        identifier = "cli"
-        title = "Command-Line Interface"
-        pre = "<span class='bp3-icon bp3-icon-console'></span>"
-        weight = 2
-    [[menu.guides]]
-        identifier = "arduino_sdk"
-        title = "Arduino SDK"
-        pre = "<span class='bp3-icon bp3-icon-console'></span>"
-        weight = 3
-
-    [[menu.api]]
-        identifier = "server"
-        title = "Server"
+    [[menu.home]]
+        identifier = "home_cli"
+        parent = "home_sections"
+        title = "TelemetryJet CLI"
+        url = "/cli/"
         pre = "<span class='bp3-icon bp3-icon-cloud'></span>"
-        weight = 1
-    [[menu.api]]
-        identifier = "cli"
-        title = "Command-Line Interface"
-        pre = "<span class='bp3-icon bp3-icon-console'></span>"
         weight = 2
-    [[menu.api]]
-        identifier = "arduino_sdk"
-        title = "Arduino SDK"
-        pre = "<span class='bp3-icon bp3-icon-console'></span>"
+    [[menu.home]]
+        identifier = "home_arduino_sdk"
+        parent = "home_sections"
+        title = "TelemetryJet Arduino SDK"
+        pre = "<span class='bp3-icon bp3-icon-cloud'></span>"
+        url = "/arduino_sdk/"
         weight = 3
+    [[menu.home]]
+        identifier = "home_server"
+        parent = "home_sections"
+        title = "TelemetryJet Server"
+        pre = "<span class='bp3-icon bp3-icon-cloud'></span>"
+        url = "/server/"
+        weight = 1
+    [[menu.server]]
+        identifier = "server_guides"
+        title = "Guides"
+        pre = "<span class='bp3-icon bp3-icon-learning'></span>"
+        weight = 1
+    [[menu.server]]
+        identifier = "server_api"
+        title = "API Reference"
+        pre = "<span class='bp3-icon bp3-icon-code'></span>"
+        weight = 2
+    [[menu.cli]]
+        identifier = "cli_guides"
+        title = "Guides"
+        pre = "<span class='bp3-icon bp3-icon-learning'></span>"
+        weight = 1
+    [[menu.cli]]
+        identifier = "cli_api"
+        title = "API Reference"
+        pre = "<span class='bp3-icon bp3-icon-code'></span>"
+        weight = 2
+    [[menu.arduino_sdk]]
+        identifier = "arduino_sdk_guides"
+        title = "Guides"
+        pre = "<span class='bp3-icon bp3-icon-learning'></span>"
+        weight = 1
+    [[menu.arduino_sdk]]
+        identifier = "arduino_sdk_api"
+        title = "API Reference"
+        pre = "<span class='bp3-icon bp3-icon-code'></span>"
+        weight = 2

@@ -271,6 +271,7 @@ code {
 .apiCard {
     padding: 0px;
     margin-bottom: 40px;
+    margin-top: 20px;
     overflow: hidden;
     background-color: #EBF1F5;
 }
