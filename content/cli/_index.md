@@ -1,5 +1,5 @@
 ---
-title: "CLI"
+title: "TelemetryJet CLI"
 weight: 1
 menu:
   root:
