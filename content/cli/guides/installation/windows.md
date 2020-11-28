@@ -12,20 +12,17 @@ menu:
 
 The recommended installation method on Windows is to download the latest installer from the [TelemetryJet Download Server](https://downloads.telemetryjet.com/builds/). The installer will set up everything required to run the TelemetryJet CLI.
 
-#### 1. Download and Run Installer
-Download and extract the desired installer from the [TelemetryJet Download Server](https://downloads.telemetryjet.com/builds/cli/windows/). Installer files end in `.msi` on the download server. To download the latest version, choose `telemetryjet-cli_latest.msi`.
+#### 1. Download the Installer
+Download and extract the latest Windows installer from the [TelemetryJet Download Server](https://downloads.telemetryjet.com/builds/cli/windows/). Installer files end in `.msi` on the download server.
 
-#### 2. Pick an Installation Directory
+#### 2. Installing the CLI
 The installer will ask for an installation directory, which will hold the TelemetryJet CLI and your data. Most users should choose the default directory.
 
-#### 3. Test Installation
-To test the installation, run `jet --version` from your shell. This should output the version of the CLI you have installed: 
-<pre>
-TelemetryJet CLI, version 0.1.0_build_1
-</pre>
+#### 3. Upgrading the CLI
+To upgrade the CLI, download and run the latest installer and select the same installation directory as your previous installation. The installer will update the CLI to the latest version.
 
-#### 3. Uninstalling
-To uninstall, find `TelemetryJet CLI` in the Windows Control Panel. The uninstaller will remove all configuration and data from your computer.
+#### 3. Uninstalling the CLI
+To uninstall, find and remove `TelemetryJet CLI` through the Windows Control Panel. The uninstaller will remove all configuration and data from your computer.
 
 <br />
 
