@@ -8,8 +8,7 @@ menu:
     title: "Installation"
 ---
 
-The TelemetryJet CLI is available on a variety of Linux platforms, macOS and Windows 10. The CLI is distributed using platform-specific methods; see the table below for individual platform instructions.
-
+The TelemetryJet CLI is available on a variety of Linux platforms, macOS and Windows 10. The CLI is distributed using platform-specific methods; see the platform-specific pages for individual instructions.
 
 The CLI binaries are also available as static files for manual installation. 
 
@@ -37,7 +36,7 @@ The CLI binaries are also available as static files for manual installation.
     <tr>
       <td><a href="/cli/guides/installation/ubuntu/">Ubuntu</a></td>
       <td><span class="bp3-icon bp3-icon-tick bp3-intent-success"></span></td>
-      <td><span class="bp3-icon bp3-icon-tick bp3-intent-success"></span></td>
+      <td></td>
     </tr>
     <tr>
       <td><a href="/cli/guides/installation/rpi/">Raspberry Pi OS</a></td>
@@ -46,3 +45,11 @@ The CLI binaries are also available as static files for manual installation.
     </tr>
   </tbody>
 </table>
+
+<br />
+### Other Platforms
+TelemetryJet may also work on other Linux distributions that are not listed above as officially supported. If your distribution runs on an x86-64 / ARM64 architecture, try using the Ubuntu distributions. For other ARM deployments, try using the Raspberry Pi OS releases.
+
+
+### Requests
+If you would like to use the TelemetryJet CLI on another platform, [feel free to create an Issue on the GitHub repository](https://github.com/telemetryjet/telemetryjet-cli/issues/new).
