@@ -26,9 +26,14 @@ brew install telemetryjet-cli
 ### Upgrading
 To upgrade to the latest version, use Homebrew's `update` and `upgrade` commands:
 <pre>
-brew update                   # Pull the list of outdated software
-brew upgrade                  # upgrade all software installed with Homebrew
-brew upgrade telemetryjet-cli # update just the telemetryjet-cli formula
+# Pull the list of outdated software
+brew update
+
+# upgrade all software installed with Homebrew
+brew upgrade
+
+# update just the telemetryjet-cli formula
+brew upgrade telemetryjet-cli
 </pre>
 
 ### Uninstalling
