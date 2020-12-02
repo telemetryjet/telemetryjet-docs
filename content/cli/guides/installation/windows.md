@@ -8,8 +8,6 @@ menu:
     title: "Install on Windows"
 ---
 
-## Recommended Installation
-
 The recommended installation method on Windows is to download the latest installer from the [TelemetryJet Download Server](https://downloads.telemetryjet.com/builds/cli/windows). The installer will set up everything required to run the TelemetryJet CLI.
 
 ### Installing

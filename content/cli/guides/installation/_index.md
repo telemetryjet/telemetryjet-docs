@@ -10,7 +10,7 @@ menu:
 
 The TelemetryJet CLI is available on a variety of Linux platforms, macOS and Windows 10. The CLI is distributed using platform-specific methods; see the platform-specific pages for individual instructions.
 
-The CLI binaries are also available as static files for manual installation. 
+The CLI binaries are also available as static files for manual installation from the [TelemetryJet Download Server](https://downloads.telemetryjet.com/builds/cli/).
 
 ## Supported Platforms
 
