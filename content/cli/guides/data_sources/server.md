@@ -3,7 +3,7 @@ title: "Server"
 weight: 3
 menu:
   cli:
-    parent: "cli_outputs"
+    parent: "cli_data_sources"
     identifier: "cli_output_server"
     title: "Server"
 ---
