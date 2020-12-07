@@ -6,6 +6,7 @@ menu:
     parent: "cli_data_sources"
     identifier: "cli_output_server"
     title: "Server"
+draft: true
 ---
 
 The Server destination streams all incoming telemetry data into a TelemetryJet Server.

@@ -96,7 +96,7 @@ Each data source definition in the configuration file has a number of fields whi
       <td><code>options</code></td>
       <td>Object</td>
       <td>No*</td>
-      <td>Defines options specific to the data source.<br/> *Some <a href="/cli/guides/data_sources/">Data Source Types</a> have required options.</td>
+      <td>An object with any options specific to the data source.<br/> Some <a href="/cli/guides/data_sources/">Data Source Types</a> have required options. This field can be omitted for data sources with no required options.</td>
     </tr>
   </tbody>
 </table>
