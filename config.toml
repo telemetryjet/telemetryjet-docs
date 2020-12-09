@@ -13,6 +13,7 @@ unsafe = true
     docsUrl = "http://localhost:1313"
     filesUrl = "http://localhost:1313"
     cloudUrl = "http://localhost:8080"
+    analyticsId = ""
 
 [menu]
     [[menu.home]]
