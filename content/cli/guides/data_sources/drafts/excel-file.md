@@ -4,6 +4,7 @@ weight: 3
 menu:
   cli:
     parent: "cli_data_sources"
+draft: true
 ---
 
 ## Overview

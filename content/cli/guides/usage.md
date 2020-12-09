@@ -105,4 +105,6 @@ Each data source definition in the configuration file has a number of fields whi
 ### Disconnect/Reconnect Behavior
 Jet will continue running until you exit it with an interrupt signal (Ctrl-C on most platforms.) If any hardware data sources disconnect, jet will periodically poll and reconnect to the data source when it is available.
 
-If you would like to exit as soon as an input or output data source is unavailable, specify the `--exit` flag. This will cause jet to throw an error and exit if any devices disconnect, or if no more data is available from a data source.
+
+
+If you would like to exit as soon as an input or output data source is unavailable, specify the `--exit` flag. This will cause jet to throw an error and exit if any devices become unavailable to read and/or write.

@@ -30,16 +30,6 @@ Jet can interface with many data source types, including files, serial devices, 
       <td>Write data into a CSV file.</td>
     </tr>
     <tr>
-      <td><a href="/cli/guides/data_sources/excel-file">excel-file</a></td>
-      <td>Write</td>
-      <td>Write data into a Excel spreadsheet.</td>
-    </tr>
-    <tr>
-      <td><a href="/cli/guides/data_sources/sqlite-file">sqlite-file</a></td>
-      <td>Write</td>
-      <td>Write data into a SQLite database.</td>
-    </tr>
-    <tr>
       <td><a href="/cli/guides/data_sources/key-value-file">key-value-file</a></td>
       <td>Write</td>
       <td>Write data into a text file in Key-Value (<code>key=value</code>) format.</td>
@@ -56,3 +46,6 @@ Jet can interface with many data source types, including files, serial devices, 
     </tr>
   </tbody>
 </table>
+
+<br />
+Need a data source type that is not listed? [Open an Issue](https://github.com/telemetryjet/telemetryjet-cli/issues/new) on the CLI Github suggesting it should be officially supported.
