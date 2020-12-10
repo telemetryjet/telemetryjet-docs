@@ -8,6 +8,10 @@ menu:
     title: "Install on Raspberry Pi OS"
 ---
 
+<div class="bp3-callout">The CLI is in early alpha. Need help getting started, or found a bug? <a href="https://github.com/telemetryjet/telemetryjet-cli/issues/new">Open an Issue</a> on our GitHub repository. We appreciate your patience and early support.
+</div>
+<br />
+
 The TelemetryJet CLI uses [apt](https://en.wikipedia.org/wiki/APT_(software)) to manage installations on Linux-based environments. The CLI is distributed using our own third-party repository. These instructions are for Raspberry Pi OS and other ARM-based Linux environments.
 
 ### Import GPG Key

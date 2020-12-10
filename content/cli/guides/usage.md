@@ -8,6 +8,10 @@ menu:
     title: "Usage"
 ---
 
+<div class="bp3-callout">The CLI is in early alpha. Need help getting started, or found a bug? <a href="https://github.com/telemetryjet/telemetryjet-cli/issues/new">Open an Issue</a> on our GitHub repository. We appreciate your patience and early support.
+</div>
+<br />
+
 ## Overview
 Jet allows you to easily stream data between a number of data sources, including serial devices, files, and the TelemetryJet server. 
 
@@ -49,7 +53,6 @@ A configuration file contains an array of data source definitions:
   },
   {
     "id": "arduino2",
-    "prefix": "arduino2",
     "type": "&lt;data source type&gt;",
     "options": {
       &lt;options for the data source&gt;
@@ -78,19 +81,13 @@ Each data source definition in the configuration file has a number of fields whi
       <td><code>id</code></td>
       <td>String</td>
       <td>Yes</td>
-      <td>A display name for this data source, used to print debug information and errors.</td>
+      <td>An ID for this data source, used as a prefix for any data points. Also used when identifying the data source in debug information.</td>
     </tr>
     <tr>
       <td><code>type</code></td>
       <td>String</td>
       <td>Yes</td>
       <td>Defines the type of data source. This must be a value from the list of <a href="/cli/guides/data_sources/">Data Source Types.</a></td>
-    </tr>
-    <tr>
-      <td><code>prefix</code></td>
-      <td>String</td>
-      <td>No</td>
-      <td>If provided, the prefix is inserted in front of any keys sent by this data source.</td>
     </tr>
     <tr>
       <td><code>options</code></td>

@@ -7,6 +7,11 @@ menu:
     identifier: "cli_installation_manual"
     title: "Manual Installation"
 ---
+
+<div class="bp3-callout">The CLI is in early alpha. Need help getting started, or found a bug? <a href="https://github.com/telemetryjet/telemetryjet-cli/issues/new">Open an Issue</a> on our GitHub repository. We appreciate your patience and early support.
+</div>
+<br />
+
 The CLI binaries are also available as static files for manual installation. Using this method, you are responsible for downloading the archive and adding the root folder to the path.
 
 ### Download an Archive

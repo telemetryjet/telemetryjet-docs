@@ -8,6 +8,10 @@ menu:
     title: "Installation"
 ---
 
+<div class="bp3-callout">The CLI is in early alpha. Need help getting started, or found a bug? <a href="https://github.com/telemetryjet/telemetryjet-cli/issues/new">Open an Issue</a> on our GitHub repository. We appreciate your patience and early support.
+</div>
+<br />
+
 The TelemetryJet CLI, `jet`, is available on a variety of Linux platforms, macOS and Windows 10. The CLI is distributed using platform-specific methods; see the platform-specific pages for individual instructions.
 
 The CLI binaries are also available as static files for manual installation from the [TelemetryJet Download Server](https://downloads.telemetryjet.com/builds/cli/).

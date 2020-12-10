@@ -13,8 +13,8 @@ menu:
 
 When combined with the `--silent` flag, which silences all debug and error messages, you can use this to pipe output from Jet into any command-line program.
 
-## Output Format
-For each data point this data source receives, it will print text to the console in the format `key=value` followed by a newline.
+## I/O Format
+For each data point this data source receives, it will print text to the console in the format `key=value` followed by a newline.  This data source does not produce any data points.
 
 <pre>
 throttle=0.00

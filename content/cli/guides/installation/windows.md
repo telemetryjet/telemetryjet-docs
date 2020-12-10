@@ -8,6 +8,10 @@ menu:
     title: "Install on Windows"
 ---
 
+<div class="bp3-callout">The CLI is in early alpha. Need help getting started, or found a bug? <a href="https://github.com/telemetryjet/telemetryjet-cli/issues/new">Open an Issue</a> on our GitHub repository. We appreciate your patience and early support.
+</div>
+<br />
+
 The recommended installation method on Windows is to download the latest installer from the [TelemetryJet Download Server](https://downloads.telemetryjet.com/builds/cli/windows). The installer will set up everything required to run the TelemetryJet CLI.
 
 ### Installing

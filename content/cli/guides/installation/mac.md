@@ -8,6 +8,10 @@ menu:
     title: "Install on MacOS"
 ---
 
+<div class="bp3-callout">The CLI is in early alpha. Need help getting started, or found a bug? <a href="https://github.com/telemetryjet/telemetryjet-cli/issues/new">Open an Issue</a> on our GitHub repository. We appreciate your patience and early support.
+</div>
+<br />
+
 The TelemetryJet CLI uses [Homebrew](https://brew.sh/) to manage installations on MacOS. These steps assume that you have Homebrew installed on your computer.
 
 ### Custom Homebrew Tap

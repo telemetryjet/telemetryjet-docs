@@ -8,6 +8,10 @@ menu:
     title: "Data Source Types"
 ---
 
+<div class="bp3-callout">The CLI is in early alpha. Need help getting started, or found a bug? <a href="https://github.com/telemetryjet/telemetryjet-cli/issues/new">Open an Issue</a> on our GitHub repository. We appreciate your patience and early support.
+</div>
+<br />
+
 Jet can interface with many data source types, including files, serial devices, and software protocols. Click each type for more information and usage details.
 
 <table class="bp3-html-table bp3-html-table-bordered bp3-html-table-condensed bp3-html-table-striped" style="width: 100%">
@@ -25,19 +29,9 @@ Jet can interface with many data source types, including files, serial devices, 
       <td>Write data to the console output.</td>
     </tr>
     <tr>
-      <td><a href="/cli/guides/data_sources/csv-file">csv-file</a></td>
-      <td>Write</td>
-      <td>Write data into a CSV file.</td>
-    </tr>
-    <tr>
       <td><a href="/cli/guides/data_sources/key-value-file">key-value-file</a></td>
       <td>Write</td>
       <td>Write data into a text file in Key-Value (<code>key=value</code>) format.</td>
-    </tr>
-    <tr>
-      <td><a href="/cli/guides/data_sources/csv-serial">csv-serial</a></td>
-      <td>Both</td>
-      <td>Read and write data as CSV lines over a serial stream.</td>
     </tr>
     <tr>
       <td><a href="/cli/guides/data_sources/key-value-serial">key-value-serial</a></td>
@@ -48,4 +42,6 @@ Jet can interface with many data source types, including files, serial devices, 
 </table>
 
 <br />
+This list will expand over time. We're currently working on core data source types, including CSV files and streams.
+
 Need a data source type that is not listed? [Open an Issue](https://github.com/telemetryjet/telemetryjet-cli/issues/new) on the CLI Github suggesting it should be officially supported.
