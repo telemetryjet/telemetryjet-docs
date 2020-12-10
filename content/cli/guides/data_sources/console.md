@@ -8,6 +8,10 @@ menu:
     title: "Console"
 ---
 
+<div class="bp3-callout">The CLI is in early alpha. Need help getting started, or found a bug? <a href="https://github.com/telemetryjet/telemetryjet-cli/issues/new">Open an Issue</a> on our GitHub repository. We appreciate your patience and early support.
+</div>
+<br />
+
 ## Overview
 `console` writes to standard output in the command line. Any data points this data source receives will be displayed in the console.
 
