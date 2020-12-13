@@ -38,7 +38,7 @@ A configuration file defines a network of multiple data sources. All the data so
 
 **Note: Data sources defined in separate JSON files don't communicate with each other.**
 
-Some data sources only transmit data, others only receive data, and many do both. For more details about which data sources transmit and receive data, see the [Data Source Types.](/cli/guides/data_sources/)
+Some data sources only produce data, others only consume data, and many do both. For more details about which data sources produce and consume data, see the [Data Source Types.](/cli/guides/data_sources/)
 
 A configuration file contains an array of data source definitions:
 
