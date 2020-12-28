@@ -1,10 +1,8 @@
 ---
-title: "Console"
-weight: 1
+title: "Console Input"
 menu:
   cli:
-    parent: "cli_data_sources"
-    identifier: "cli_output_console"
+    parent: "cli_input_data_sources"
     title: "Console"
 ---
 
