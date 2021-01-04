@@ -23,7 +23,7 @@
 					<a href="{{ .URL }}" class="sidebarItemHref">
 						<div
 							class="sidebarMenuItem {{if ($currentPage.IsMenuCurrent $menuName .)}}sidebarMenuItemSelected{{end}}">
-							<div class="buttonText">{{ .Title }}
+							<div class="buttonText">{{ .Pre }}{{ .Title }}{{ .Post }}
 								{{if  .HasChildren }}
 								{{if or ($currentPage.IsMenuCurrent $menuName .) ($currentPage.HasMenuCurrent $menuName .)}}
 								<span class="bp3-icon bp3-icon-chevron-down"></span>
@@ -41,7 +41,7 @@
 								<a href="{{ .URL }}" class="sidebarItemHref">
 									<div
 										class="sidebarMenuItem {{if ($currentPage.IsMenuCurrent $menuName .)}}sidebarMenuItemSelected{{end}}">
-										<div class="buttonText">{{ .Title }}</div>
+										<div class="buttonText">{{ .Pre }}{{ .Title }}{{ .Post }}</div>
 									</div>
 								</a>
 							{{ end }}

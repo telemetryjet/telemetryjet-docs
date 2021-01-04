@@ -4,7 +4,6 @@ weight: 11
 menu:
   server:
     parent: "server_guides"
-    identifier: "cloud_self_hosting"
     title: "Self Hosting"
 ---
 

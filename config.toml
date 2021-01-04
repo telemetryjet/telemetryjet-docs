@@ -26,20 +26,17 @@ unsafe = true
         parent = "home_sections"
         title = "TelemetryJet CLI"
         url = "/cli/"
-        pre = "<span class='bp3-icon bp3-icon-cloud'></span>"
         weight = 2
     [[menu.home]]
         identifier = "home_arduino_sdk"
         parent = "home_sections"
         title = "TelemetryJet Arduino SDK"
-        pre = "<span class='bp3-icon bp3-icon-cloud'></span>"
         url = "/arduino_sdk/"
         weight = 3
     [[menu.home]]
         identifier = "home_server"
         parent = "home_sections"
         title = "TelemetryJet Server"
-        pre = "<span class='bp3-icon bp3-icon-cloud'></span>"
         url = "/server/"
         weight = 1
     [[menu.server]]
@@ -49,8 +46,13 @@ unsafe = true
         weight = 1
     [[menu.server]]
         identifier = "server_api"
-        title = "API Reference"
+        title = "REST API"
         pre = "<span class='bp3-icon bp3-icon-code'></span>"
+        weight = 2
+    [[menu.server]]
+        identifier = "server_api_ws"
+        title = "Streaming API"
+        pre = "<span class='bp3-icon bp3-icon-feed'></span>"
         weight = 2
     [[menu.cli]]
         identifier = "cli_guides"

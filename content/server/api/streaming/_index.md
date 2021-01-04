@@ -1,10 +1,9 @@
 ---
-title: "Streaming API"
-weight: 4
+title: "Overview"
+weight: 1
 menu:
   server:
-    parent: "server_api"
-    title: "Streaming API"
+    parent: "server_api_ws"
 ---
 
 The Streaming API is used to send and receive live data points. The streaming API is used in the TelemetryJet UI to power Dashboards and other live features.

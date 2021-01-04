@@ -88,7 +88,12 @@
     background-color: #137CBD !important;
     color: #FFFFFF;
 }
-
+.sidebarMenuItemSelected .bp3-tag {
+    color: #FFFFFF !important;
+}
+.sidebarMenuItem .bp3-tag {
+    margin-right: 5px;
+}
 .sidebarMenuItem:hover {
     background-color: #BFCCD6;
 }
