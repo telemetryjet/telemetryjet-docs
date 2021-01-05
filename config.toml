@@ -54,6 +54,41 @@ unsafe = true
         title = "Streaming API"
         pre = "<span class='bp3-icon bp3-icon-feed'></span>"
         weight = 2
+    [[menu.server]]
+        title = "Get Dashboard"
+        identifier = "get-dashboard"
+        weight = 1
+        parent = "server_dashboard_api"
+        pre = "<div class=\"bp3-tag bp3-minimal bp3-intent-success\">GET</div>"
+        url = "/server/rest-api/dashboards/#get-dashboard"
+    [[menu.server]]
+        title = "Get All Dashboards"
+        identifier = "get-all-dashboards"
+        weight = 2
+        parent = "server_dashboard_api"
+        pre = "<div class=\"bp3-tag bp3-minimal bp3-intent-success\">GET</div>"
+        url = "/server/rest-api/dashboards/#get-all-dashboards"
+    [[menu.server]]
+        title = "Create Dashboard"
+        identifier = "create-dashboard"
+        weight = 3
+        parent = "server_dashboard_api"
+        pre = "<div class=\"bp3-tag bp3-minimal bp3-intent-primary\">POST</div>"
+        url = "/server/rest-api/dashboards/#create-dashboard"
+    [[menu.server]]
+        title = "Update Dashboard"
+        identifier = "update-dashboard"
+        weight = 4
+        parent = "server_dashboard_api"
+        pre = "<div class=\"bp3-tag bp3-minimal bp3-intent-primary\">POST</div>"
+        url = "/server/rest-api/dashboards/#update-dashboard"
+    [[menu.server]]
+        title = "Delete Dashboard"
+        identifier = "delete-dashboard"
+        weight = 5
+        parent = "server_dashboard_api"
+        pre = "<div class=\"bp3-tag bp3-minimal bp3-intent-danger\">DELETE</div>"
+        url = "/server/rest-api/dashboards/#delete-dashboard"
     [[menu.cli]]
         identifier = "cli_guides"
         title = "Guides"
@@ -68,6 +103,7 @@ unsafe = true
         identifier = "arduino_sdk_guides"
         title = "Guides"
         pre = "<span class='bp3-icon bp3-icon-learning'></span>"
+        url = "#test"
         weight = 1
     [[menu.arduino_sdk]]
         identifier = "arduino_sdk_api"

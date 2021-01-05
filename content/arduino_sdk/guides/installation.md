@@ -3,7 +3,7 @@ title: "Installation"
 weight: 1
 menu:
   arduino_sdk:
-    parent: "arduino_sdk_overview"
+    parent: "arduino_sdk_guides"
     identifier: "arduino_sdk_installation"
     title: "Installation"
 ---
@@ -21,7 +21,7 @@ Select the latest version, and click **Install**.
 After a short download, the library is now ready to include in your project! 
 
 ### 1.1 Updating
-
+To update the SDK version, repeat the instructions above to install the library. Select the newest version, and click **Install**. The Arduino Library Manager will update the library to the latest version.
 
 
 ## 2. Manual Installation
@@ -32,10 +32,10 @@ Navigate to [github.com/telemetryjet/tjet-arduino-sdk](https://github.com/teleme
 
 In the Arduino IDE, navigate to **Sketch** > **Include Library** > **Add .ZIP Library...**. Your library is now ready to use. 
 
-### 1.1 Updating
+### 2.1 Updating
 With a manual installation, you will need to replace the SDK each time an update is released. When a new version of the SDK is released, follow the manual installation steps again with the new file. 
 
-# Usage
+## Usage
 
 To start using the library in your project, add the following include statement to your source code:
 

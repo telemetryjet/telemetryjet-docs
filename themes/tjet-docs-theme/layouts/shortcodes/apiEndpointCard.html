@@ -1,0 +1,29 @@
+<div class="apiEndpointHiddenHeader">
+
+
+## {{ .Get "title" }}
+    
+    
+</div>
+<div class="bp3-card apiEndpointCard">
+<div class="apiEndpointCardHeading">
+{{ if eq (.Get "method") "GET" }}<div class="bp3-tag bp3-intent-success bp3-minimal">{{ .Get "method" }}</div>{{ end }}
+{{ if eq (.Get "method") "POST" }}<div class="bp3-tag bp3-intent-primary bp3-minimal">{{ .Get "method" }}</div>{{ end }}
+{{ if eq (.Get "method") "DELETE" }}<div class="bp3-tag bp3-intent-danger bp3-minimal">{{ .Get "method" }}</div>{{ end }}
+<code>{{ .Get "path" }}</code>
+
+</div>
+<div class="apiCardContent">
+
+**Description**
+{{ .Inner }}
+
+<pre class="bp3-dark">
+<b>Example Request</b>
+{{ .Get "request" }}
+
+<b>Example Response</b>
+{{ .Get "response" }}
+</pre>
+</div>
+</div>

@@ -285,3 +285,8 @@ img.menuSocialIcon {
 .secondaryHeaderSectionDivider {
     height: 100%;
 }
+
+#headerAlert a {
+    color: #bfccd6;
+    text-decoration: underline;
+}
