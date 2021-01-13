@@ -32,10 +32,11 @@ Jet is completely stateless -- All the configuration is set using the files and 
 
 A configuration file defines a network of multiple data sources. All the data sources in a file can communicate with each other bidirectionally. 
 
-**Note: Data sources defined in separate JSON files don't communicate with each other.**
+<div class="bp3-callout bp3-intent-warning">
+Note: Data sources defined in separate JSON files don't communicate with each other.
+</div><br />
 
-Some data sources only produce data, others only consume data, and many do both. For more details about which data sources produce and consume data, see the [Data Source Types.](/cli/guides/data_sources/)
-
+Some data sources only produce data, others only consume data, and many do both. 
 A configuration file contains an array of data source definitions:
 
 <pre>
@@ -83,13 +84,25 @@ Each data source definition in the configuration file has a number of fields whi
       <td><code>type</code></td>
       <td>String</td>
       <td>Yes</td>
-      <td>Defines the type of data source. This must be a value from the list of <a href="/cli/guides/data_sources/">Data Source Types.</a></td>
+      <td>Defines the type of data source. This must be a value from the list of data source types.
     </tr>
     <tr>
       <td><code>options</code></td>
       <td>Object</td>
       <td>No*</td>
-      <td>An object with any options specific to the data source.<br/> Some <a href="/cli/guides/data_sources/">Data Source Types</a> have required options. This field can be omitted for data sources with no required options.</td>
+      <td>An object with any options specific to the data source.<br/> Some data source types have required options. This field can be omitted for data sources with no required options.</td>
+    </tr>
+    <tr>
+      <td><code>filter</code></td>
+      <td>Object</td>
+      <td>No</td>
+      <td>Filtering options for input & output data points. Can be optionally applied on any data source to filter which data is processed by the data source. See <a href="/cli/guides/common-options/">Common Options</a> for details.</td>
+    </tr>
+    <tr>
+      <td><code>caching</code></td>
+      <td>Object</td>
+      <td>No</td>
+      <td>Caching options. If enabled, the cache will store data points to a temporary file when a data source is offline, and send cached data points when the data source is online. See <a href="/cli/guides/common-options/">Common Options</a> for details.</td>
     </tr>
   </tbody>
 </table>

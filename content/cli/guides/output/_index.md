@@ -8,15 +8,9 @@ menu:
     title: "Output Data Sources"
 ---
 
-<div class="bp3-callout">The CLI is in early alpha. Need help getting started, or found a bug? <a href="https://github.com/telemetryjet/telemetryjet-cli/issues/new">Open an Issue</a> on our GitHub repository. We appreciate your patience and early support.
-</div>
-<br />
-
 Jet can interface with many data source types, including files, serial devices, and software protocols. 
 
-Each data source may produce and/or consume data points. "Inputs" produce data, "Outputs" consume data, and "Bidirectional" data sources do both. For example, a `key-value-file-input` reads data from a file in Key-Value format, and a `key-value-file-output` writes data into a file.
-
-Click each type for more information and usage details.
+Each data source may produce and/or consume data points. "Inputs" produce data, "Outputs" consume data, and "Bidirectional" data sources do both. Click each type for more information and usage details.
 
 <table class="bp3-html-table bp3-html-table-bordered bp3-html-table-condensed bp3-html-table-striped" style="width: 100%">
   <thead>

@@ -14,13 +14,13 @@ menu:
 
 The TelemetryJet CLI, `jet`, is a command-line tool for defining, monitoring, and controlling embedded telemetry systems.
 
-Use jet to stream data between a number of data sources, including serial devices, files, and the TelemetryJet server. Jet uses declarative configuration: You specify your data sources in JSON configuration files, and jet handles the details of streaming data between the sources.
+Use Jet to stream data between a number of data sources, including serial devices, files, and the TelemetryJet server. Jet uses declarative configuration: You specify your data sources in JSON configuration files, and Jet handles the details of streaming data between the sources.
 
 ## Use Cases
 
 Jet is an extremely versatile tool. Here are some examples of how you can use it:
 
-**Stream data to a CSV file:** Use jet to stream hardware telemetry data straight into a CSV file, without any programming required.
+**Stream data to a CSV file:** Use Jet to stream hardware telemetry data straight into a CSV file, without any programming required.
 
 **Stream data to a TelemetryJet Server:** Stream data to a TelemetryJet Server, and build live dashboards and visualizations that are viewable from anywhere.
 
@@ -34,4 +34,4 @@ Jet is an extremely versatile tool. Here are some examples of how you can use it
 
 To get started, learn how to [Install the TelemetryJet CLI.](/cli/guides/installation/)
 
-Once jet is installed, learn more about [Usage of the CLI.](/cli/guides/usage/)
+Once Jet is installed, learn more about [Usage of the CLI.](/cli/guides/usage/)
