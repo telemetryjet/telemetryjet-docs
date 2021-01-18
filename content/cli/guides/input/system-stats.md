@@ -5,8 +5,25 @@ menu:
     parent: "cli_input_data_sources"
 ---
 
-<div class="bp3-callout">The CLI is in early alpha. Need help getting started, or found a bug? <a href="https://github.com/telemetryjet/telemetryjet-cli/issues/new">Open an Issue</a> on our GitHub repository. We appreciate your patience and early support.
-</div>
-<br />
+## Overview
+`system-stats` collects CPU, Memory, and disk space metrics from the device it is running on. This can be used to monitor the performance of a telemetry hub such as a Raspberry Pi.
 
-## TODO
+## Dimensions
+This data source produces the following dimensions:
+
+- cpu
+- cpu.idle
+- ram.available
+- ram.used
+- ram.total
+- disk.capacity
+- disk.available
+- disk.usage
+
+## Example Definition
+<pre>
+{
+  "id": "system-stats-example",
+  "type": "system-stats"
+}
+</pre>
